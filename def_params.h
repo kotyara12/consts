@@ -1,4 +1,5 @@
 #pragma once
+#include "project_config.h"
 
 // -----------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------- EN - Common parameters ----------------------------------------------------
@@ -27,24 +28,18 @@
 // RU: Интервал публикации данных на MQTT сервере
 #define CONFIG_SENSOR_PARAM_INTERVAL_MQTT_KEY "mqtt"
 #define CONFIG_SENSOR_PARAM_INTERVAL_MQTT_FRIENDLY "Интервал отправки данных с сенсоров на MQTT брокер"
-#if CONFIG_OPENMON_ENABLE
 // EN: The interval for publishing data on the open-monitoring.online
 // RU: Интервал публикации данных на open-monitoring.online
 #define CONFIG_SENSOR_PARAM_INTERVAL_OPENMON_KEY "openmon"
 #define CONFIG_SENSOR_PARAM_INTERVAL_OPENMON_FRIENDLY "Интервал отправки данных с сенсоров на open-monitoring.online"
-#endif // CONFIG_OPENMON_ENABLE
-#if CONFIG_THINGSPEAK_ENABLE
 // EN: The interval for publishing data on the thingspeak.com
 // RU: Интервал публикации данных на thingspeak.com
 #define CONFIG_SENSOR_PARAM_INTERVAL_THINGSPEAK_KEY "thingspeak"
 #define CONFIG_SENSOR_PARAM_INTERVAL_THINGSPEAK_FRIENDLY "Интервал отправки данных с сенсоров на thingspeak.com"
-#endif // CONFIG_THINGSPEAK_ENABLE
-#if CONFIG_HOSTING_ENABLE
 // EN: The interval for publishing data on your hosting
 // RU: Интервал публикации данных на своем хостинге
 #define CONFIG_SENSOR_PARAM_INTERVAL_HOSTING_KEY "site"
 #define CONFIG_SENSOR_PARAM_INTERVAL_HOSTING_FRIENDLY "Интервал отправки данных с сенсоров на хостинге"
-#endif // CONFIG_HOSTING_ENABLE
 // EN: The parameter of the sensor, with which you can correct the value (if it is known that the sensor is "lying")
 // RU: Параметр сенсора, с помощью которого можно подкорректировать значение (если известно, что сенсор "врет")
 #define CONFIG_SENSOR_PARAM_OFFSET_KEY "offset"
