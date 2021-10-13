@@ -1,0 +1,104 @@
+#pragma once
+
+// -----------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------- EN - Common parameters ----------------------------------------------------
+// -------------------------------------------- RU - Общие параметры -----------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------
+// EN: The name of the MQTT topic for setting the "quiet" mode
+// RU: Название топика MQTT для настройки "тихого" режима
+#define CONFIG_SILENT_MODE_TOPIC "silent_mode"
+// EN: Friendly name (used for interval change notifications)
+// RU: Понятное название (используется для уведомлений об изменении интервала)
+#define CONFIG_SILENT_MODE_NAME "Интервал времени суток без звуковых и световых оповещений"
+
+// -----------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------- EN - Sensor parameters ---------------------------------------------------
+// ------------------------------------------- RU - Параметры сенсоров ---------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------
+#define CONFIG_SENSOR_PGROUP_ROOT_KEY "sens"
+#define CONFIG_SENSOR_PGROUP_ROOT_TOPIC "sensors"
+#define CONFIG_SENSOR_PGROUP_ROOT_FRIENDLY "Сенсоры"
+// EN: Parameter group - intervals of data publication on various services
+// RU: Группа параметров - интервалы публикации данных на различных сервисах
+#define CONFIG_SENSOR_PGROUP_INTERVALS_KEY "intv"
+#define CONFIG_SENSOR_PGROUP_INTERVALS_TOPIC "intervals"
+#define CONFIG_SENSOR_PGROUP_INTERVALS_FRIENDLY "Интервалы отправки данных"
+// EN: The interval for publishing data on the MQTT server
+// RU: Интервал публикации данных на MQTT сервере
+#define CONFIG_SENSOR_PARAM_INTERVAL_MQTT_KEY "mqtt"
+#define CONFIG_SENSOR_PARAM_INTERVAL_MQTT_FRIENDLY "Интервал отправки данных с сенсоров на MQTT брокер"
+#if CONFIG_OPENMON_ENABLE
+// EN: The interval for publishing data on the open-monitoring.online
+// RU: Интервал публикации данных на open-monitoring.online
+#define CONFIG_SENSOR_PARAM_INTERVAL_OPENMON_KEY "openmon"
+#define CONFIG_SENSOR_PARAM_INTERVAL_OPENMON_FRIENDLY "Интервал отправки данных с сенсоров на open-monitoring.online"
+#endif // CONFIG_OPENMON_ENABLE
+#if CONFIG_THINGSPEAK_ENABLE
+// EN: The interval for publishing data on the thingspeak.com
+// RU: Интервал публикации данных на thingspeak.com
+#define CONFIG_SENSOR_PARAM_INTERVAL_THINGSPEAK_KEY "thingspeak"
+#define CONFIG_SENSOR_PARAM_INTERVAL_THINGSPEAK_FRIENDLY "Интервал отправки данных с сенсоров на thingspeak.com"
+#endif // CONFIG_THINGSPEAK_ENABLE
+#if CONFIG_HOSTING_ENABLE
+// EN: The interval for publishing data on your hosting
+// RU: Интервал публикации данных на своем хостинге
+#define CONFIG_SENSOR_PARAM_INTERVAL_HOSTING_KEY "site"
+#define CONFIG_SENSOR_PARAM_INTERVAL_HOSTING_FRIENDLY "Интервал отправки данных с сенсоров на хостинге"
+#endif // CONFIG_HOSTING_ENABLE
+// EN: The parameter of the sensor, with which you can correct the value (if it is known that the sensor is "lying")
+// RU: Параметр сенсора, с помощью которого можно подкорректировать значение (если известно, что сенсор "врет")
+#define CONFIG_SENSOR_PARAM_OFFSET_KEY "offset"
+#define CONFIG_SENSOR_PARAM_OFFSET_FRIENDLY "Корректировка значения"
+// EN: Sensor parameter responsible for selecting the type of value filter
+// RU: Параметр сенсора, отвечающий за выбор типа фильтра значений
+#define CONFIG_SENSOR_PARAM_FILTERMODE_KEY "filter_mode"
+#define CONFIG_SENSOR_PARAM_FILTERMODE_FRIENDLY "Тип фильтра"
+// EN: Sensor parameter responsible for the size of the value filter buffer
+// RU: Параметр сенсора, отвечающий за размер буфера фильтра значений
+#define CONFIG_SENSOR_PARAM_FILTERSIZE_KEY "filter_size"
+#define CONFIG_SENSOR_PARAM_FILTERSIZE_FRIENDLY "Размер буфера фильтра"
+// EN: Input data range type for conversion in % for soil moisture sensors
+// RU: Тип диапазона входных данных для пересчета в % для сенсоров влажности почвы
+#define CONFIG_SENSOR_PARAM_RANGETYPE_KEY "range_type"
+#define CONFIG_SENSOR_PARAM_RANGETYPE_FRIENDLY "Тип диапазона"
+// EN: Width (size) of the range of input data for conversion in % for soil moisture sensors
+// RU: Ширина (размер) диапазона входных данных для пересчета в % для сенсоров влажности почвы
+#define CONFIG_SENSOR_PARAM_RANGESIZE_KEY "range_size"
+#define CONFIG_SENSOR_PARAM_RANGESIZE_FRIENDLY "Ширина диапазона"
+// EN: Input data value corresponding to 0% for soil moisture sensors
+// RU: Значение входных данных, соответствующее 0% для сенсоров влажности почвы
+#define CONFIG_SENSOR_PARAM_LEVELMIN_KEY "range_0"
+#define CONFIG_SENSOR_PARAM_LEVELMIN_FRIENDLY "Значение 0%"
+// EN: Input data value corresponding to 100% for soil moisture sensors
+// RU: Значение входных данных, соответствующее 100% для сенсоров влажности почвы
+#define CONFIG_SENSOR_PARAM_LEVELMAX_KEY "range_100"
+#define CONFIG_SENSOR_PARAM_LEVELMAX_FRIENDLY "Значение 100%"
+// EN: Built-in sensor heater parameters
+// RU: Параметры встроенного нагревателя сенсора
+#define CONFIG_SENSOR_PARAM_HEATER_GROUP_KEY "htr"
+#define CONFIG_SENSOR_PARAM_HEATER_GROUP_TOPIC "heater"
+#define CONFIG_SENSOR_PARAM_HEATER_GROUP_FRIENDLY "Встроенный нагреватель"
+// EN: Sensor heater preset temperature
+// RU: Заданная температура нагревателя сенсора
+#define CONFIG_SENSOR_PARAM_HEATER_TEMP_KEY "temp"
+#define CONFIG_SENSOR_PARAM_HEATER_TEMP_FRIENDLY "Температура"
+// EN: Sensor heater duration in milliseconds
+// RU: Длительность работы нагревателя сенсора в миллисекундах
+#define CONFIG_SENSOR_PARAM_HEATER_DUR_KEY "duration"
+#define CONFIG_SENSOR_PARAM_HEATER_DUR_FRIENDLY "Длительность"
+// EN: Lower value limit for air quality sensor
+// RU: Нижняя граница значений для сенсора качества воздуха
+#define CONFIG_SENSOR_PARAM_GAS_LIMIT_BAD_KEY "limit_bad"
+#define CONFIG_SENSOR_PARAM_GAS_LIMIT_BAD_FRIENDLY "Нижняя граница"
+// EN: Higher value limit for air quality sensor
+// RU: Верхняя граница значений для сенсора качества воздуха
+#define CONFIG_SENSOR_PARAM_GAS_LIMIT_GOOD_KEY "limit_good"
+#define CONFIG_SENSOR_PARAM_GAS_LIMIT_GOOD_FRIENDLY "Верхняя граница"
+// EN: Higher value limit for air quality sensor
+// RU: Верхняя граница значений для сенсора качества воздуха
+#define CONFIG_SENSOR_PARAM_GAS_LIMIT_AUTOSHIFT_KEY "limit_autoshift"
+#define CONFIG_SENSOR_PARAM_GAS_LIMIT_AUTOSHIFT_FRIENDLY "Автосдвиг границ"
+// EN: Humidity contribution to total IAQ
+// RU: Коэффициент вклада влажности в общее значение IAQ
+#define CONFIG_SENSOR_PARAM_GAS_HUM_RATIO_KEY "hum_ratio"
+#define CONFIG_SENSOR_PARAM_GAS_HUM_RATIO_FRIENDLY "Коэффициент влажности"
