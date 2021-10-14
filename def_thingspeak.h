@@ -8,6 +8,9 @@
 // EN: Minimum server access interval in milliseconds (for each channel separately)
 // RU: Минимальный интервал обращения к серверу в миллисекундах (для каждого канала отдельно)
 #define CONFIG_THINGSPEAK_MIN_INTERVAL 1000
+// EN: Server access interval in milliseconds for API failures
+// RU: Интервал обращения к серверу в миллисекундах при отказах API
+#define CONFIG_THINGSPEAK_ERROR_INTERVAL 1000
 // EN: Use static memory allocation for the task and queue. CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION must be enabled!
 // RU: Использовать статическое выделение памяти под задачу и очередь. Должен быть включен параметр CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION!
 #define CONFIG_THINGSPEAK_STATIC_ALLOCATION 1
