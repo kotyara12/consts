@@ -16,7 +16,7 @@
 #define CONFIG_OPENMON_STATIC_ALLOCATION 1
 // EN: Stack size for the task of sending data to open-monitoring.online
 // RU: Размер стека для задачи отправки данных на open-monitoring.online
-#define CONFIG_OPENMON_STACK_SIZE 2048
+#define CONFIG_OPENMON_STACK_SIZE 3072
 // EN: Queue size for the task of sending data to open-monitoring.online
 // RU: Размер очереди для задачи отправки данных на open-monitoring.online
 #define CONFIG_OPENMON_QUEUE_SIZE 8

@@ -5,6 +5,10 @@
 // ------------------------------------------ EN - https://thingspeak.com/ -----------------------------------------------
 // ------------------------------------------ RU - https://thingspeak.com/ -----------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
+// EN: TLS certificate for API
+// RU: TLS-сертификат для API
+#define CONFIG_THINGSPEAK_TLS_PEM_START "_binary_digi_cert_pem_start"
+#define CONFIG_THINGSPEAK_TLS_PEM_END "_binary_digi_cert_pem_end"
 // EN: Minimum server access interval in milliseconds (for each channel separately)
 // RU: Минимальный интервал обращения к серверу в миллисекундах (для каждого канала отдельно)
 #define CONFIG_THINGSPEAK_MIN_INTERVAL 1000
@@ -16,7 +20,7 @@
 #define CONFIG_THINGSPEAK_STATIC_ALLOCATION 1
 // EN: Stack size for the task sending data to thingspeak.com
 // RU: Размер стека для задачи отправки данных на thingspeak.com
-#define CONFIG_THINGSPEAK_STACK_SIZE 2048
+#define CONFIG_THINGSPEAK_STACK_SIZE 3072
 // EN: Queue size for task sending data to thingspeak.com
 // RU: Размер очереди для задачи отправки данных на thingspeak.com
 #define CONFIG_THINGSPEAK_QUEUE_SIZE 8
