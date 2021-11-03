@@ -13,6 +13,10 @@
 // RU: Отправлять уведомления в Telegram при отключении и подключении к MQTT брокеру
 #define CONFIG_NOTIFY_TELEGRAM_MQTT_STATUS 1
 #define CONFIG_NOTIFY_TELEGRAM_ALERT_MQTT_STATUS 0
+// EN: Send notifications to Telegram on MQTT client errors
+// RU: Отправлять уведомления в Telegram при ошибках MQTT клиента
+#define CONFIG_NOTIFY_TELEGRAM_MQTT_ERRORS 0
+#define CONFIG_NOTIFY_TELEGRAM_ALERT_MQTT_ERRORS 0
 // EN: Send an alert in telegram in case of problems with the Internet
 // RU: Отправить оповещение в telegram при проблемах с интернетом
 #define CONFIG_NOTIFY_TELEGRAM_INET_UNAVAILABLE 1

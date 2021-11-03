@@ -8,6 +8,10 @@
 // EN: Timezone
 // RU: Часовой пояс
 #define CONFIG_SNTP_TIMEZONE "MSK-3"
+// EN: Synchronization interval in milliseconds
+// RU: Интервал синхронизации в миллисекундах
+#define CONFIG_SNTP_DELAY_NORMAL 3600000
+#define CONFIG_SNTP_DELAY_FAILED 60000
 // EN: Five servers with which you can synchronize time
 // RU: Пять серверов, с которыми можно синхронизировать время
 #define CONFIG_SNTP_SERVER0 "pool.ntp.org"

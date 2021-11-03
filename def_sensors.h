@@ -48,7 +48,7 @@
 #define CONFIG_SENSOR_DISPLAY "display"
 // EN: Allow publishing of raw RAW data (no correction or filtering): 0 - only processed value, 1 - always both values, 2 - only when there is processing
 // RU: Разрешить публикацию необработанных RAW-данных (без коррекции и фильтрации): 0 - только обработанное значение, 1 - всегда оба значения, 2 - только когда есть обработка
-#define CONFIG_SENSOR_RAW_ENABLE 2
+#define CONFIG_SENSOR_RAW_ENABLE 1
 // EN: Subtopic name or JSON key for RAW data (no correction or filtering)
 // RU: Название субтопика или JSON-ключа для RAW-данных (без коррекции и фильтрации)
 #define CONFIG_SENSOR_RAW_VALUE "raw"

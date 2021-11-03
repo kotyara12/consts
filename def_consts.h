@@ -22,6 +22,7 @@
 #include "def_tg_ping.h"
 #include "def_params.h"
 #include "def_sensors.h"
+#include "def_formats.h"
 #include "def_formats_sensors.h"
 #include "def_formats_datetime.h"
 
