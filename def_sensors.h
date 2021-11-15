@@ -10,6 +10,7 @@
 #define CONFIG_SENSOR_STATUS "status"
 // EN: Sensor status text value
 // RU: Текстовое значение статуса сенсора
+#define CONFIG_SENSOR_STATUS_NAN "NO DATA"
 #define CONFIG_SENSOR_STATUS_OK "OK"
 #define CONFIG_SENSOR_STATUS_TIMEOUT "TIMEOUT"
 #define CONFIG_SENSOR_STATUS_CALIBRATION "SENSOR FAILED"
