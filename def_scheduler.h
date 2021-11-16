@@ -19,4 +19,4 @@
 #define CONFIG_SCHEDULER_CORE 1
 // EN: The interval between scheduler cycles in milliseconds. The smaller, the higher the accuracy, but the higher the load on the processor
 // RU: Интервал между циклами шедулера в миллисекундах. Чем меньше, тем выше точность, но выше нагрузка на процессор
-#define CONFIG_SCHEDULER_DELAY 100
+#define CONFIG_SCHEDULER_DELAY 250
