@@ -5,12 +5,37 @@
 // ------------------------------------------- EN - Common parameters ----------------------------------------------------
 // -------------------------------------------- RU - Общие параметры -----------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
-// EN: The name of the MQTT topic for setting the "quiet" mode
-// RU: Название топика MQTT для настройки "тихого" режима
+// EN: Parameters for the "silent" mode
+// RU: Параметры для "тихого" режима
+#if defined(CONFIG_SILENT_MODE_ENABLE) && CONFIG_SILENT_MODE_ENABLE
 #define CONFIG_SILENT_MODE_TOPIC "silent_mode"
-// EN: Friendly name (used for interval change notifications)
-// RU: Понятное название (используется для уведомлений об изменении интервала)
 #define CONFIG_SILENT_MODE_NAME "Интервал времени суток без звуковых и световых оповещений"
+#endif // CONFIG_SILENT_MODE_ENABLE
+
+// EN: Parameters for multi-tariff mode
+// RU: Параметры для мультитарифного режима
+#if defined(CONFIG_MULTI_TARIFF_ENABLE) && CONFIG_MULTI_TARIFF_ENABLE
+#define CONFIG_MULTI_TARIFF_GROUP_KEY   "mtariff"
+#define CONFIG_MULTI_TARIFF_GROUP_TOPIC "multitariff"
+#define CONFIG_MULTI_TARIFF_GROUP_NAME  "Мультитарифный режим"
+#define CONFIG_MULTI_TARIFF_DAY_KEY   "td"
+#define CONFIG_MULTI_TARIFF_DAY_TOPIC "tariff_day"
+#define CONFIG_MULTI_TARIFF_DAY_NAME  "Пиковая (дневная) зона"
+#define CONFIG_MULTI_TARIFF_SELF_KEY   "ts"
+#define CONFIG_MULTI_TARIFF_SELF_TOPIC "tariff_self"
+#define CONFIG_MULTI_TARIFF_SELF_NAME  "Полупиковая зона"
+#define CONFIG_MULTI_TARIFF_NIGHT_KEY   "tn"
+#define CONFIG_MULTI_TARIFF_NIGHT_TOPIC "tariff_night"
+#define CONFIG_MULTI_TARIFF_NIGHT_NAME  "Ночная зона"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_TOPIC "timespan"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_NAME  "Интервал"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_1_TOPIC "timespan1"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_1_NAME  "Интервал 1"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_2_TOPIC "timespan2"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_2_NAME  "Интервал 2"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_3_TOPIC "timespan3"
+#define CONFIG_MULTI_TARIFF_TIMESPAN_3_NAME  "Интервал 3"
+#endif // CONFIG_MULTI_TARIFF_ENABLE
 
 // -----------------------------------------------------------------------------------------------------------------------
 // -------------------------------------------- EN - Sensor parameters ---------------------------------------------------
