@@ -24,4 +24,5 @@
 #include "def_formats.h"
 #include "def_formats_sensors.h"
 #include "def_formats_datetime.h"
+#include "def_opertime.h"
 

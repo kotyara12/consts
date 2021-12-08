@@ -14,7 +14,7 @@
 #define CONFIG_TELEGRAM_STATIC_ALLOCATION 1
 // EN: Stack size for the task of sending notifications to Telegram
 // RU: Размер стека для задачи отправки уведомлений в Telegram
-#define CONFIG_TELEGRAM_STACK_SIZE 3072
+#define CONFIG_TELEGRAM_STACK_SIZE 3584
 // EN: Queue size for the task of sending notifications to Telegram
 // RU: Размер очереди для задачи отправки уведомлений в Telegram
 #define CONFIG_TELEGRAM_QUEUE_SIZE 16

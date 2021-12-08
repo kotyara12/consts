@@ -17,7 +17,7 @@
 #define CONFIG_EVENT_LOOP_QUEUE_SIZE 32
 // EN: Stack size of the main event loop task
 // RU: Размер стека задачи основного цикла событий
-#define CONFIG_EVENT_LOOP_STACK_SIZE ESP_TASKD_EVENT_STACK+1024
+#define CONFIG_EVENT_LOOP_STACK_SIZE 4096 // ESP_TASKD_EVENT_STACK+1024
 // EN: Main event loop task priority
 // RU: Приоритет задачи основного цикла событий
 #define CONFIG_EVENT_LOOP_PRIORITY ESP_TASKD_EVENT_PRIO
