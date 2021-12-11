@@ -30,7 +30,7 @@
 
 // EN: Telegram notification templates
 // RU: Шаблоны уведомлений в Telegram
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_SENSOR_UNDEFINED_TEMPLATE "🟡 Получена команда от неизвестного датчика ОПС<code>Значение: 0x%.8X / %d</code>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_SENSOR_UNDEFINED_TEMPLATE "🟡 Получена команда от неизвестного датчика ОПС\n\n<code>Значение: 0x%.8X / %d</code>"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_COMMAND_UNDEFINED_TEMPLATE "🟡 Получена неизвестная команда от датчика ОПС\n\n<code>Датчик:   %s\nЗначение: 0x%.8X / %d</code>"
 
 // EN: Flash mode on input signal

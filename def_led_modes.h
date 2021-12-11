@@ -28,9 +28,9 @@
 #define CONFIG_LEDSYS_ERROR_INTERVAL 1000
 // EN: Flashing mode when receiving OTA update
 // RU: Режим мигания при получении OTA обновления
-#define CONFIG_LEDSYS_OTA_QUANTITY 1
-#define CONFIG_LEDSYS_OTA_DURATION 100
-#define CONFIG_LEDSYS_OTA_INTERVAL 100
+#define CONFIG_LEDSYS_OTA_QUANTITY 3
+#define CONFIG_LEDSYS_OTA_DURATION 75
+#define CONFIG_LEDSYS_OTA_INTERVAL 250
 // EN: Blinking mode while connecting to WiFi
 // RU: Режим мигания в процессе подключения к WiFi
 #define CONFIG_LEDSYS_WIFI_INIT_QUANTITY 1
