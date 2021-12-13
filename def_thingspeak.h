@@ -15,9 +15,6 @@
 // EN: Server access interval in milliseconds for API failures
 // RU: Интервал обращения к серверу в миллисекундах при отказах API
 #define CONFIG_THINGSPEAK_ERROR_INTERVAL 1000
-// EN: The number of errors in accessing the server in a row, after which a notification will be sent to the event loop
-// RU: Количество ошибок обращения к серверу подряд, после чего будет отправлено оповещение в цикл событий
-#define CONFIG_THINGSPEAK_ERROR_LIMIT 5
 // EN: Use static memory allocation for the task and queue. CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION must be enabled!
 // RU: Использовать статическое выделение памяти под задачу и очередь. Должен быть включен параметр CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION!
 #define CONFIG_THINGSPEAK_STATIC_ALLOCATION 1
@@ -38,4 +35,7 @@
 #define CONFIG_THINGSPEAK_CORE 1
 // EN: Number of attempts to send data to thingspeak.com
 // RU: Количество попыток отправки данных на thingspeak.com
-#define CONFIG_THINGSPEAK_MAX_ATTEMPTS 3
+#define CONFIG_THINGSPEAK_MAX_ATTEMPTS 10
+// EN: The number of errors in accessing the server in a row, after which a notification will be sent to the event loop
+// RU: Количество ошибок обращения к серверу подряд, после чего будет отправлено оповещение в цикл событий
+#define CONFIG_THINGSPEAK_ERROR_LIMIT 10

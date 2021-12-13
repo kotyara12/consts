@@ -25,5 +25,6 @@
 #include "def_formats_sensors.h"
 #include "def_formats_datetime.h"
 #include "def_loadctrl.h"
+#include "def_tempmonitor.h"
 #include "def_eltariffs.h"
 

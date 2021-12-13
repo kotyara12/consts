@@ -7,5 +7,5 @@
 #define CONFIG_PING_TASK_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY
 // EN: Display results for each packet sent (otherwise, only totals)
 // RU: Отбражать результаты для каждого отправленного пакета (иначе - только итоги)
-#define CONFIG_PING_SHOW_INTERMEDIATE 1
+#define CONFIG_PING_SHOW_INTERMEDIATE 0
 
