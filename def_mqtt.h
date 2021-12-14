@@ -17,7 +17,7 @@
 #define CONFIG_MQTT_BACK_TO_PRIMARY_TIME_MINUTES 15
 // EN: Send buffer size in bytes
 // RU: Размер буфера отправки в байтах
-#define CONFIG_MQTT_WRITE_BUFFER_SIZE 2048      
+#define CONFIG_MQTT_WRITE_BUFFER_SIZE 4098      
 // EN: Receive buffer size in bytes
 // RU: Размер буфера приема в байтах
 #define CONFIG_MQTT_READ_BUFFER_SIZE 256      
