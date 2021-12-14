@@ -17,13 +17,13 @@
 #define CONFIG_MQTT_BACK_TO_PRIMARY_TIME_MINUTES 15
 // EN: Send buffer size in bytes
 // RU: Размер буфера отправки в байтах
-#define CONFIG_MQTT_WRITE_BUFFER_SIZE 5*1024      
+#define CONFIG_MQTT_WRITE_BUFFER_SIZE 2048      
 // EN: Receive buffer size in bytes
 // RU: Размер буфера приема в байтах
 #define CONFIG_MQTT_READ_BUFFER_SIZE 256      
 // EN: MQTT task stack size
 // RU: Параметры задачи MQTT
-#define CONFIG_MQTT_CLIENT_STACK_SIZE 6144
+#define CONFIG_MQTT_CLIENT_STACK_SIZE 4098
 #define CONFIG_MQTT_CLIENT_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY
 #define CONFIG_MQTT_CLIENT_CORE 1
 

@@ -17,7 +17,7 @@
 #define CONFIG_ALARM_STATIC_ALLOCATION 1
 // EN: Stack size for the fire alarm task
 // RU: Размер стека для задачи охранно-пожарной сигнализации
-#define CONFIG_ALARM_STACK_SIZE 1024*5
+#define CONFIG_ALARM_STACK_SIZE 3078
 // EN: Queue size for the fire alarm task
 // RU: Размер очереди для задачи охранно-пожарной сигнализации
 #define CONFIG_ALARM_QUEUE_SIZE 32

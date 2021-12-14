@@ -6,7 +6,7 @@
 // ------------------------------------------------ RU - Светодиод состояния ---------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
 #define CONFIG_LED_QUEUE_SIZE 3
-#define CONFIG_LED_TASK_STACK_SIZE 2048
+#define CONFIG_LED_TASK_STACK_SIZE 1536
 #define CONFIG_LED_TASK_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY
 #define CONFIG_LED_TASK_CORE 1
 
