@@ -59,6 +59,9 @@
 // EN: Format for air quality as a string
 // RU: Формат для качества воздуха в виде строки
 #define CONFIG_FORMAT_IAQ_STRING "%.1f"
+// EN: Format for single values 
+// RU: Формат для одного значения
+#define CONFIG_FORMAT_MIXED_STRING1 "%s"
 // EN: Format for two values (e.g. temperature and humidity) in one bottle
 // RU: Формат для двух значений (например температуры и влажности) в одном флаконе
 #define CONFIG_FORMAT_MIXED_STRING2 "%s\n%s"
