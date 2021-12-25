@@ -1,14 +1,43 @@
 #pragma once
 #include "project_config.h"
 
+// EN: Text descriptions of security modes
+// RU: Текстовые описания режимов охраны
+#define CONFIG_ALARM_MODE_DISABLED "🔓 Охрана отключена"
+#define CONFIG_ALARM_MODE_ARMED "🔒 Полная охрана"
+#define CONFIG_ALARM_MODE_PERIMETER "🟡 Охрана периметра"
+#define CONFIG_ALARM_MODE_OUTBUILDINGS "🟡 Внешние помещения"
+
+#define CONFIG_ALARM_SIREN_DISABLED "🔇 Отключена"
+#define CONFIG_ALARM_SIREN_ENABLED "🔊 Включена"
+
+// EN: Text descriptions of security events
+// RU: Текстовые описания событий охраны
+#define CONFIG_ALARM_EVENT_TAMPER "⚠️ Попытка взлома датчика"
+#define CONFIG_ALARM_EVENT_DOOROPEN "🚪 Открыта дверь"
+#define CONFIG_ALARM_EVENT_MOTION "🏃 Обнаружено движение"
+#define CONFIG_ALARM_EVENT_POWER_ON "🟩 Электропитание восстановлено"
+#define CONFIG_ALARM_EVENT_POWER_OFF "🟨 Электропитание отключено"
+#define CONFIG_ALARM_EVENT_LOW_BATTERY "🔋 Низкий уровень заряда батареи"
+#define CONFIG_ALARM_EVENT_BUTTON "🔔 Нажата тревожная кнопка"
+#define CONFIG_ALARM_EVENT_RCTRL_OFF "🔓 Пульт: режим охраны отключен"
+#define CONFIG_ALARM_EVENT_RCTRL_ON "🔒 Пульт: режим охраны включен" 
+#define CONFIG_ALARM_EVENT_RCTRL_PERIMETER "🟡 Пульт: режим охраны периметра"
+#define CONFIG_ALARM_EVENT_RCTRL_OUTBUILDINGS "🟡 Пульт: режим охраны внешних помещений"
+
+
 // EN: Telegram notifications when switching the security mode
 // RU: Уведомления в Telegram при переключении режима охраны
-#define CONFIG_ALARM_NOTIFY_TELEGRAM_MODE_CHANGE 1
-#define CONFIG_ALARM_NOTIFY_TELEGRAM_ALARM_MODE_CHANGE 1
-#define CONFIG_ALARM_NOTIFY_TELEGRAM_MODE_DISABLED "🟢 Режим охраны: <b>отключен</b>"
-#define CONFIG_ALARM_NOTIFY_TELEGRAM_MODE_ARMED "🔴 Режим охраны: <b>полная охрана</b>"
-#define CONFIG_ALARM_NOTIFY_TELEGRAM_MODE_PERIMETER "🟡 Режим охраны: <b>периметр</b>"
-#define CONFIG_ALARM_NOTIFY_TELEGRAM_MODE_OUTBUILDINGS "🟡 Режим охраны: <b>подсобные помещения</b>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_DISABLED "🔓 Охрана <b>отключена</b>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ARMED "🔒 Включен режим <b>полная охрана</b>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_PERIMETER "🟡 Включен режим <b>охраны периметра</b>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_OUTBUILDINGS "🟡 Включен режим <b>охраны внешних помещений</b>"
+
+// EN: Telegram notification templates
+// RU: Шаблоны уведомлений в Telegram
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_TEMPLATE "<b>%s</b>\n\n<code>Режим:    </code><b><i>%s</i></b>\n<code>Зона:     </code><b><i>%s</i></b>\n<code>Источник: </code><b><i>%s</i></b>\n<code>Сирена:   </code><b><i>%s</i></b>\n<code>Время:    </code><b><i>%s</i></b>\n<code>Тревог:   </code><b><i>%d</i></b>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_SENSOR_UNDEFINED_TEMPLATE "🟡 Получена команда от неизвестного датчика ОПС\n\n<code>Протокол: %d\nЗначение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_COMMAND_UNDEFINED_TEMPLATE "🟡 Получена неизвестная команда от датчика ОПС\n\n<code>Датчик:   %s\nЗначение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
 
 // EN: Maximum number of events that can be assigned to one sensor
 // RU: Максимальное количество событий, которое можно назначить на один сенсор
@@ -66,11 +95,6 @@
 #define CONFIG_ALARM_PARAMS_QOS 2
 #define CONFIG_ALARM_PARAMS_MIN_DURATION 0
 #define CONFIG_ALARM_PARAMS_MAX_DURATION 3600
-
-// EN: Telegram notification templates
-// RU: Шаблоны уведомлений в Telegram
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_SENSOR_UNDEFINED_TEMPLATE "🟡 Получена команда от неизвестного датчика ОПС\n\n<code>Протокол: %d\nЗначение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_COMMAND_UNDEFINED_TEMPLATE "🟡 Получена неизвестная команда от датчика ОПС\n\n<code>Датчик:   %s\nЗначение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
 
 // EN: LED flash mode on input signal
 // RU: Режим вспышек светодиода при входящем сигнале
@@ -142,4 +166,4 @@
 // RU: Сигнал зуммера при тревоге
 #define CONFIG_ALARM_BUZZER_ALARM_FREQUENCY 1568
 #define CONFIG_ALARM_BUZZER_ALARM_DURATION 500
-#define CONFIG_ALARM_BUZZER_ALARM_QUANTITY 5
+#define CONFIG_ALARM_BUZZER_ALARM_QUANTITY 10
