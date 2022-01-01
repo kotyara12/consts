@@ -8,7 +8,7 @@
 // EN: Timeouts for maintaining the active state of sensors (for sensors that transmit only an alarm signal, without a reset signal)
 // RU: Таймауты поддержания активного состояния сенсоров (для датчиков, которые передают только сигнал тревоги, без сигнала сброса)
 #define CONFIG_ALARM_TIMEOUT_RF_BUTTON       5000
-#define CONFIG_ALARM_TIMEOUT_RF_RCONTROL     1000
+#define CONFIG_ALARM_TIMEOUT_RF_RCONTROL     3000
 #define CONFIG_ALARM_TIMEOUT_RF_PIR_MOTION   3000
 #define CONFIG_ALARM_TIMEOUT_RF_PERM         10000
 #define CONFIG_ALARM_TIMEOUT_RF_DOOR         10000
@@ -22,10 +22,21 @@
 
 // EN: Timeout of waiting for completion of a packet of codes from wireless sensors
 // RU: Таймаут ожидания завершения пакета кодов с беспроводных сенсоров
+#define CONFIG_ALARM_TIMEOUT_ISR 500
 #define CONFIG_ALARM_TIMEOUT_RF 500
 // EN: The number of codes in a row, after which data processing begins without waiting for the completion of the batch
 // RU: Количество кодов подряд, после которого начинается обработка данных без ожидания завершения пакета
 #define CONFIG_ALARM_THRESHOLD_RF 3
+#define CONFIG_ALARM_THRESHOLD_ISR 1
+
+// EN: MQTT - publishing status
+// RU: MQTT - публикация статуса
+#define CONFIG_ALARM_MQTT_TOPIC_STATUS_LOCAL 0
+#define CONFIG_ALARM_MQTT_TOPIC_STATUS_QOS 2
+#define CONFIG_ALARM_MQTT_TOPIC_STATUS_RETAINED 1
+
+#define CONFIG_ALARM_MQTT_TOPIC_STATUS_ROOT "security"
+#define CONFIG_ALARM_MQTT_TOPIC_STATUS_STATUS "status"
 
 // EN: MQTT - publishing events
 // RU: MQTT - публикация событий
@@ -39,8 +50,7 @@
 #define CONFIG_ALARM_MQTT_TOPIC_EVENTS_JSON "json"
 #define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_ALARM "alarm"
 #define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_TAMPER "tamper"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_POWER_ON "power/on"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_POWER_OFF "power/off"
+#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_POWER "power"
 #define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_BATTERY "lowbat"
 #define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_CONTROL_ON "control/on"
 #define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_CONTROL_OFF "control/off"
