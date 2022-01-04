@@ -8,6 +8,9 @@
 // EN: Subtopic name or JSON key for sensor status
 // RU: Название субтопика или JSON-ключа для статуса сенсора
 #define CONFIG_SENSOR_STATUS "status"
+// EN: Subtopic name for publishing local data (for exchange between devices)
+// RU: Название субтопика для публикации локальных данных (для обмена между устройствами)
+#define CONFIG_SENSOR_LOCAL_EXCHANGE "sensors"
 // EN: Sensor status text value
 // RU: Текстовое значение статуса сенсора
 #define CONFIG_SENSOR_STATUS_NAN "NO DATA"
