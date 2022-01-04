@@ -22,12 +22,12 @@
 
 // EN: Timeout of waiting for completion of a packet of codes from wireless sensors
 // RU: Таймаут ожидания завершения пакета кодов с беспроводных сенсоров
-#define CONFIG_ALARM_TIMEOUT_ISR 500
+#define CONFIG_ALARM_TIMEOUT_ISR 250
 #define CONFIG_ALARM_TIMEOUT_RF 500
 // EN: The number of codes in a row, after which data processing begins without waiting for the completion of the batch
 // RU: Количество кодов подряд, после которого начинается обработка данных без ожидания завершения пакета
 #define CONFIG_ALARM_THRESHOLD_RF 3
-#define CONFIG_ALARM_THRESHOLD_ISR 1
+#define CONFIG_ALARM_THRESHOLD_ISR UINT16_MAX
 
 #define CONFIG_ALARM_MQTT_TOPIC_SECURITY "security"
 
