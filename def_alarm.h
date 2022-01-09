@@ -26,7 +26,7 @@
 #define CONFIG_ALARM_TIMEOUT_RF 500
 // EN: The number of codes in a row, after which data processing begins without waiting for the completion of the batch
 // RU: Количество кодов подряд, после которого начинается обработка данных без ожидания завершения пакета
-#define CONFIG_ALARM_THRESHOLD_RF 3
+#define CONFIG_ALARM_THRESHOLD_RF 1
 #define CONFIG_ALARM_THRESHOLD_ISR UINT16_MAX
 
 #define CONFIG_ALARM_MQTT_TOPIC_SECURITY "security"
@@ -38,6 +38,7 @@
 #define CONFIG_ALARM_MQTT_TOPIC_STATUS_RETAINED 1
 
 #define CONFIG_ALARM_MQTT_TOPIC_STATUS "status"
+#define CONFIG_ALARM_MQTT_TOPIC_STATUS_DISPLAY 0
 
 // EN: MQTT - publishing events
 // RU: MQTT - публикация событий
@@ -94,7 +95,7 @@
 #define CONFIG_ALARM_EVENT_MESSAGE_DOOROPEN "🚨 Открыта дверь"
 #define CONFIG_ALARM_EVENT_MESSAGE_MOTION "🚨 Обнаружено движение"
 #define CONFIG_ALARM_EVENT_MESSAGE_GAS "🚨 Обнаружена утечка газа"
-#define CONFIG_ALARM_EVENT_MESSAGE_SMOKE "🚨 Обнаружено задымление"
+#define CONFIG_ALARM_EVENT_MESSAGE_SMOKE "🔥 Обнаружено задымление"
 #define CONFIG_ALARM_EVENT_MESSAGE_WATER "🚨 Протечка воды"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_ON "🟩 Электропитание восстановлено"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_OFF "🟨 Электропитание отключено"
