@@ -39,6 +39,7 @@
 
 #define CONFIG_ALARM_MQTT_TOPIC_STATUS "status"
 #define CONFIG_ALARM_MQTT_TOPIC_STATUS_DISPLAY 0
+#define CONFIG_ALARM_MQTT_TOPIC_STATUS_EOL CONFIG_JSON_CHAR_EOL
 
 // EN: MQTT - publishing events
 // RU: MQTT - публикация событий

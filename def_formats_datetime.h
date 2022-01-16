@@ -34,8 +34,8 @@
 #define CONFIG_FORMAT_TIMEDAY "%s %s"
 // EN: The format "time + date": 1 - time (CONFIG_FORMAT_TIME), 2 - date (CONFIG_FORMAT_DATE)
 // RU: Формат "время + дата": 1 - time (CONFIG_FORMAT_TIME), 2 - date (CONFIG_FORMAT_DATE)
-#define CONFIG_FORMAT_DATETIME1 "%s\n%s"
+#define CONFIG_FORMAT_DATETIME1 "%s" CONFIG_JSON_CHAR_EOL "%s"
 // EN: The format "(time + day of the week) + date": 1 - time + wday (CONFIG_FORMAT_TIMEDAY and CONFIG_FORMAT_WT), 2 - date (CONFIG_FORMAT_DATE)
 // RU: Формат "(время + день недели) + дата": 1 - time+wday (CONFIG_FORMAT_TIMEDAY и CONFIG_FORMAT_WT), 2 - date (CONFIG_FORMAT_DATE)
-#define CONFIG_FORMAT_DATETIME2 "%s\n%s"
+#define CONFIG_FORMAT_DATETIME2 "%s" CONFIG_JSON_CHAR_EOL "%s"
 

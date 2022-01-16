@@ -18,3 +18,10 @@
 #define CONFIG_MQTT_TASKLIST_LOCAL 0
 #define CONFIG_MQTT_TASKLIST_QOS 1
 #define CONFIG_MQTT_TASKLIST_RETAINED 1
+
+// EN: WiFi debug info topic name
+// RU: Название топика отладочной информации об WiFi
+#define CONFIG_MQTT_WIFI_DEBUG_TOPIC "wifi_debug"
+#define CONFIG_MQTT_WIFI_DEBUG_LOCAL 0
+#define CONFIG_MQTT_WIFI_DEBUG_QOS 1
+#define CONFIG_MQTT_WIFI_DEBUG_RETAINED 1
