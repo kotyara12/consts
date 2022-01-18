@@ -29,37 +29,46 @@
 #define CONFIG_ALARM_THRESHOLD_RF 1
 #define CONFIG_ALARM_THRESHOLD_ISR UINT16_MAX
 
-#define CONFIG_ALARM_MQTT_TOPIC_SECURITY "security"
+// EN: Date and time formats
+// RU: Форматы даты и времени
+#define CONFIG_ALARM_TIMESTAMP_LONG "%d.%m.%Y %H:%M:%S"
+#define CONFIG_ALARM_TIMESTAMP_SHORT "%d.%m.%y %H:%M"
 
 // EN: MQTT - publishing status
 // RU: MQTT - публикация статуса
-#define CONFIG_ALARM_MQTT_TOPIC_STATUS_LOCAL 0
-#define CONFIG_ALARM_MQTT_TOPIC_STATUS_QOS 2
-#define CONFIG_ALARM_MQTT_TOPIC_STATUS_RETAINED 1
+#define CONFIG_ALARM_MQTT_SECURITY_TOPIC "security"
 
-#define CONFIG_ALARM_MQTT_TOPIC_STATUS "status"
-#define CONFIG_ALARM_MQTT_TOPIC_STATUS_DISPLAY 0
-#define CONFIG_ALARM_MQTT_TOPIC_STATUS_EOL CONFIG_JSON_CHAR_EOL
+#define CONFIG_ALARM_MQTT_STATUS_TOPIC "status"
+#define CONFIG_ALARM_MQTT_STATUS_LOCAL 0
+#define CONFIG_ALARM_MQTT_STATUS_QOS 2
+#define CONFIG_ALARM_MQTT_STATUS_RETAINED 1
+
+#define CONFIG_ALARM_MQTT_STATUS_DISPLAY 0
+#define CONFIG_ALARM_MQTT_STATUS_SUMMARY "%s : %.2d : %s"
+#define CONFIG_ALARM_MQTT_STATUS_DEVICE_EMPTY "Нет событий"
+#define CONFIG_ALARM_MQTT_STATUS_JSON_ALARM "{\"sensor\":\"%s\",\"time\":\"%s\",\"time_short\":\"%s\",\"unixtime\":%d}"
+#define CONFIG_ALARM_MQTT_STATUS_JSON_ANNUNCIATOR "{\"siren\":%d,\"flasher\":%d,\"summary\":%d}"
+#define CONFIG_ALARM_MQTT_STATUS_EOL CONFIG_JSON_CHAR_EOL
 
 // EN: MQTT - publishing events
 // RU: MQTT - публикация событий
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_LOCAL 0
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_QOS 2
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_RETAINED 1
+#define CONFIG_ALARM_MQTT_EVENTS_TOPIC "events"
+#define CONFIG_ALARM_MQTT_EVENTS_LOCAL 0
+#define CONFIG_ALARM_MQTT_EVENTS_QOS 2
+#define CONFIG_ALARM_MQTT_EVENTS_RETAINED 1
 
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS "events"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_TYPE "type"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_STATUS "status"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_JSON "json"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_JSON_TEMPLATE "{\"status\":%d,\"time\":\"%s\",\"unixtime\":%d,\"count\":%d}"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_ALARM "alarm"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_TAMPER "tamper"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_POWER "power"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_BATTERY "lowbat"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_CONTROL_ON "control/on"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_CONTROL_OFF "control/off"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_CONTROL_PERIMETER "control/perimeter"
-#define CONFIG_ALARM_MQTT_TOPIC_EVENTS_ASE_CONTROL_OUTBUILDINGS "control/outbuildings"
+#define CONFIG_ALARM_MQTT_EVENTS_TYPE "type"
+#define CONFIG_ALARM_MQTT_EVENTS_STATUS "status"
+#define CONFIG_ALARM_MQTT_EVENTS_JSON "json"
+#define CONFIG_ALARM_MQTT_EVENTS_JSON_TEMPLATE "{\"status\":%d,\"time\":\"%s\",\"time_short\":\"%s\",\"unixtime\":%d,\"count\":%d}"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_ALARM "alarm"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_TAMPER "tamper"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_POWER "power"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_BATTERY "lowbat"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_CONTROL_ON "control/on"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_CONTROL_OFF "control/off"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_CONTROL_PERIMETER "control/perimeter"
+#define CONFIG_ALARM_MQTT_EVENTS_ASE_CONTROL_OUTBUILDINGS "control/outbuildings"
 
 // EN: Settings
 // RU: Параметры
@@ -82,10 +91,20 @@
 
 // EN: Text descriptions of security modes
 // RU: Текстовые описания режимов охраны
+#define CONFIG_ALARM_MODE_CHAR_DISABLED "🔓"
+#define CONFIG_ALARM_MODE_CHAR_ARMED "🔐" // "🔒" (замок) | "🛡" (щит)
+#define CONFIG_ALARM_MODE_CHAR_PERIMETER "⭕️"
+#define CONFIG_ALARM_MODE_CHAR_OUTBUILDINGS "🚘"
+
+#define CONFIG_ALARM_ANNUNCIATOR_OFF "🔕"
+#define CONFIG_ALARM_ANNUNCIATOR_FLASHER "🔆"
+#define CONFIG_ALARM_ANNUNCIATOR_SIREN "🔔"
+#define CONFIG_ALARM_ANNUNCIATOR_TOTAL "🚨"
+
 #define CONFIG_ALARM_MODE_DISABLED "Охрана отключена"
 #define CONFIG_ALARM_MODE_ARMED "Полная охрана"
 #define CONFIG_ALARM_MODE_PERIMETER "Охрана периметра"
-#define CONFIG_ALARM_MODE_OUTBUILDINGS "Внешние помещения"
+#define CONFIG_ALARM_MODE_OUTBUILDINGS "Охрана гаража"
 
 #define CONFIG_ALARM_SIREN_DISABLED "Отключена"
 #define CONFIG_ALARM_SIREN_ENABLED "Включена"
@@ -97,15 +116,15 @@
 #define CONFIG_ALARM_EVENT_MESSAGE_MOTION "🚨 Обнаружено движение"
 #define CONFIG_ALARM_EVENT_MESSAGE_GAS "🚨 Обнаружена утечка газа"
 #define CONFIG_ALARM_EVENT_MESSAGE_SMOKE "🔥 Обнаружено задымление"
-#define CONFIG_ALARM_EVENT_MESSAGE_WATER "🚨 Протечка воды"
+#define CONFIG_ALARM_EVENT_MESSAGE_WATER "💧 Протечка воды"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_ON "🟩 Электропитание восстановлено"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_OFF "🟨 Электропитание отключено"
 #define CONFIG_ALARM_EVENT_MESSAGE_LOW_BATTERY "🔋 Низкий уровень заряда батареи"
 #define CONFIG_ALARM_EVENT_MESSAGE_BUTTON "🔔 Нажата тревожная кнопка"
-#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_OFF "🔓 Пульт: режим охраны отключен"
-#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_ON "🔒 Пульт: режим охраны включен" 
-#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_PERIMETER "🟡 Пульт: режим охраны периметра"
-#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_OUTBUILDINGS "🟡 Пульт: режим охраны внешних помещений"
+#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_OFF CONFIG_ALARM_MODE_CHAR_DISABLED " Пульт: режим охраны отключен"
+#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_ON CONFIG_ALARM_MODE_CHAR_ARMED " Пульт: режим охраны включен" 
+#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_PERIMETER CONFIG_ALARM_MODE_CHAR_PERIMETER " Пульт: режим охраны периметра"
+#define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_OUTBUILDINGS CONFIG_ALARM_MODE_CHAR_OUTBUILDINGS " Пульт: режим охраны внешних помещений"
 
 // EN: Text descriptions of security events
 // RU: Текстовые описания канала управления
@@ -116,10 +135,10 @@
 
 // EN: Telegram notifications when switching the security mode
 // RU: Уведомления в Telegram при переключении режима охраны
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_DISABLED "🔓 Охрана <b>отключена</b> ( <b>%s</b> )"
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ARMED "🔒 Охрана <b>включена</b> ( <b>%s</b> )"
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_PERIMETER "🟡 Включена <b>охрана периметра</b> ( <b>%s</b> )"
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_OUTBUILDINGS "🟡 Включена <b>охрана внешних помещений</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_DISABLED CONFIG_ALARM_MODE_CHAR_DISABLED " Охрана <b>отключена</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ARMED CONFIG_ALARM_MODE_CHAR_ARMED " Охрана <b>включена</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_PERIMETER CONFIG_ALARM_MODE_CHAR_PERIMETER " Включена <b>охрана периметра</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_OUTBUILDINGS CONFIG_ALARM_MODE_CHAR_OUTBUILDINGS " Включена <b>охрана внешних помещений</b> ( <b>%s</b> )"
 
 // EN: Telegram notification templates
 // RU: Шаблоны уведомлений в Telegram
