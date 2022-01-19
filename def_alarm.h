@@ -32,7 +32,9 @@
 // EN: Date and time formats
 // RU: Форматы даты и времени
 #define CONFIG_ALARM_TIMESTAMP_LONG "%d.%m.%Y %H:%M:%S"
+#define CONFIG_ALARM_TIMESTAMP_LONG_BUF_SIZE 20
 #define CONFIG_ALARM_TIMESTAMP_SHORT "%d.%m.%y %H:%M"
+#define CONFIG_ALARM_TIMESTAMP_SHORT_BUF_SIZE 15
 
 // EN: MQTT - publishing status
 // RU: MQTT - публикация статуса

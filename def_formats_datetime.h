@@ -5,6 +5,12 @@
 // ------------------------------------------ EN - Date and time formats -------------------------------------------------
 // ------------------------------------------ RU - Форматы даты и времени ------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
+// EN: Buffer size for converting date and time to string
+// RU: Размер буфера для конвертации даты и времни в строку
+#define CONFIG_FORMAT_STRFTIME_BUFFER_SIZE 32
+// EN: Textual representation of an "empty" date and time
+// RU: Текстовое представление "пустой" даты и времени
+#define CONFIG_FORMAT_EMPTY_DATETIME "---"
 // EN: Localized names for days of the week
 // RU: Локализованные названия для дней недели
 #define CONFIG_FORMAT_WDAY1 "пн"
