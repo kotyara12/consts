@@ -8,14 +8,17 @@
 // EN: Delay between update attempts
 // RU: Задержка между попытками обновления
 #define CONFIG_OTA_DELAY 3000
+// EN: Update timeout in seconds
+// RU: Таймаут обновления в секундах
+#define CONFIG_OTA_WATCHDOG 600
 // EN: TLS certificate for the OTA update server
 // RU: TLS-сертификат для сервера OTA обновлений
 #define CONFIG_OTA_PEM_START "_binary_isrg_root_x1_pem_start"
 #define CONFIG_OTA_PEM_END "_binary_isrg_root_x1_pem_end"
 // EN: OTA task parameters
 // RU: Параметры задачи OTA
-#define CONFIG_OTA_TASK_STACK_SIZE 5120
-#define CONFIG_OTA_TASK_PRIORITY ESP_TASK_PRIO_MAX-1
+#define CONFIG_OTA_TASK_STACK_SIZE 4*1024
+#define CONFIG_OTA_TASK_PRIORITY ESP_TASK_PRIO_MAX-10
 #define CONFIG_OTA_TASK_CORE 1
 
 // EN: Topic name for OTA updates
