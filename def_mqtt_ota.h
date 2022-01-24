@@ -7,7 +7,7 @@
 #define CONFIG_OTA_HTTPS_ATTEMPTS 5
 // EN: Delay between update attempts
 // RU: Задержка между попытками обновления
-#define CONFIG_OTA_DELAY 3000
+#define CONFIG_OTA_DELAY 5000
 // EN: Update timeout in seconds
 // RU: Таймаут обновления в секундах
 #define CONFIG_OTA_WATCHDOG 600
