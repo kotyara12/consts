@@ -77,6 +77,7 @@
 // RU: Параметр сенсора, отвечающий за размер буфера фильтра значений
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_KEY "filter_size"
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_FRIENDLY "Размер буфера фильтра"
+#define CONFIG_SENSOR_PARAM_FILTERSIZE_MAX 32767
 // EN: Input data range type for conversion in % for soil moisture sensors
 // RU: Тип диапазона входных данных для пересчета в % для сенсоров влажности почвы
 #define CONFIG_SENSOR_PARAM_RANGETYPE_KEY "range_type"
