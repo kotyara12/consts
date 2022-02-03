@@ -28,3 +28,6 @@
 #include "def_tempmonitor.h"
 #include "def_eltariffs.h"
 
+// EN: Delayed writing of new values in NVS in microseconds
+// RU: Отложенная запись новых значений в NVS в микросекундах
+#define CONFIG_NVS_DELAY_COMMIT_US 10000000
