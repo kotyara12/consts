@@ -71,24 +71,4 @@
 // EN: Format for three values (e.g. temperature, humidity and pressure) in one bottle
 // RU: Формат для трех значений (например температуры, влажности и давления) в одном флаконе
 #define CONFIG_FORMAT_MIXED_STRING3 "%s" CONFIG_JSON_CHAR_EOL "%s" CONFIG_JSON_CHAR_EOL "%s"
-// EN: Format for ping response time
-// RU: Формат для времени ответа пинга
-#define CONFIG_FORMAT_PING_TIMERESP_VALUE "%d"
-// EN: Format for ping response time as a string
-// RU: Формат для времени ответа пинга в виде строки
-#define CONFIG_FORMAT_PING_TIMERESP_STRING "%d ms"
-// EN: Format for ping response time
-// RU: Формат для времени ответа пинга
-#define CONFIG_FORMAT_PING_LOSS_VALUE "%.1f"
-// EN: Format for ping response time as a string
-// RU: Формат для времени ответа пинга в виде строки
-#define CONFIG_FORMAT_PING_LOSS_STRING "%.1f% %"
-// EN: Format for three values (status, delay, loss) in one topic
-// RU: Формат для трех значений (статус, задержка, потери) в одном топике
-#define CONFIG_FORMAT_PING_MIXED "%s" CONFIG_JSON_CHAR_EOL "t: %d ms" CONFIG_JSON_CHAR_EOL "l: %.0f% %"
-// EN: Ping statuses
-// RU: Надписи для статусов пинга
-#define CONFIG_FORMAT_PING_OK "🙂"
-#define CONFIG_FORMAT_PING_BAD "😨"
-#define CONFIG_FORMAT_PING_UNAVAILABLED "😡"
 
