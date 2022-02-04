@@ -82,6 +82,10 @@
 #define CONFIG_ALARM_PARAMS_MODE_FRIENDLY "Режим"
 #define CONFIG_ALARM_PARAMS_SIREN_DUR_KEY "siren_duration"
 #define CONFIG_ALARM_PARAMS_SIREN_DUR_FRIENDLY "Длительность звучания сирены"
+#define CONFIG_ALARM_PARAMS_SIREN_SILENT_ENABLED_KEY "silent_enabled"
+#define CONFIG_ALARM_PARAMS_SIREN_SILENT_ENABLED_FRIENDLY "Блокировать сирену в ночное время"
+#define CONFIG_ALARM_PARAMS_SIREN_SILENT_PERIOD_KEY "silent_period"
+#define CONFIG_ALARM_PARAMS_SIREN_SILENT_PERIOD_FRIENDLY "Интервал времени блокировки сирены"
 #define CONFIG_ALARM_PARAMS_FLASHER_DUR_KEY "flash_duration"
 #define CONFIG_ALARM_PARAMS_FLASHER_DUR_FRIENDLY "Длительность световых вспышек"
 #define CONFIG_ALARM_PARAMS_BUZZER_KEY "buzzer"
@@ -111,6 +115,14 @@
 #define CONFIG_ALARM_SIREN_DISABLED "Отключена"
 #define CONFIG_ALARM_SIREN_ENABLED "Включена"
 
+// RU: Текстовые команды
+#define CONFIG_ALARM_COMMAND_MODE_DISABLED "alarm off"
+#define CONFIG_ALARM_COMMAND_MODE_ARMED "alarm full"
+#define CONFIG_ALARM_COMMAND_MODE_PERIMETER "alarm perimiter"
+#define CONFIG_ALARM_COMMAND_MODE_OUTBUILDINGS "alarm garage"
+#define CONFIG_ALARM_COMMAND_ALARM_CANCEL "alarm cancel"
+#define CONFIG_ALARM_COMMAND_ALARM_RESET "alarm reset"
+
 // EN: Text descriptions of security events
 // RU: Текстовые описания событий охраны
 #define CONFIG_ALARM_EVENT_MESSAGE_TAMPER "⚠️ Попытка взлома датчика"
@@ -134,6 +146,7 @@
 #define CONFIG_ALARM_SOURCE_BUTTONS "Панель управления"
 #define CONFIG_ALARM_SOURCE_RCONTROL "Пульт"
 #define CONFIG_ALARM_SOURCE_MQTT "Интернет"
+#define CONFIG_ALARM_SOURCE_COMMAND "Интернет"
 
 // EN: Telegram notifications when switching the security mode
 // RU: Уведомления в Telegram при переключении режима охраны
