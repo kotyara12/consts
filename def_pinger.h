@@ -34,6 +34,6 @@
 // EN: Ping statuses
 // RU: Надписи для статусов пинга
 #define CONFIG_FORMAT_PING_OK "📶"
-#define CONFIG_FORMAT_PING_BAD "🐌"
+#define CONFIG_FORMAT_PING_DELAYED "🐌"
 #define CONFIG_FORMAT_PING_UNAVAILABLED "⛔️"
 

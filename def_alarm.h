@@ -91,7 +91,7 @@
 #define CONFIG_ALARM_PARAMS_BUZZER_KEY "buzzer"
 #define CONFIG_ALARM_PARAMS_BUZZER_FRIENDLY "Звуковой сигнал на пульте"
 
-#define CONFIG_ALARM_PARAMS_QOS 2
+#define CONFIG_ALARM_PARAMS_QOS 1
 #define CONFIG_ALARM_PARAMS_MIN_DURATION 0
 #define CONFIG_ALARM_PARAMS_MAX_DURATION 3600
 
@@ -142,7 +142,7 @@
 
 // EN: Text descriptions of security events
 // RU: Текстовые описания канала управления
-#define CONFIG_ALARM_SOURCE_STORED "EEPROM"
+#define CONFIG_ALARM_SOURCE_STORED "Память"
 #define CONFIG_ALARM_SOURCE_BUTTONS "Панель управления"
 #define CONFIG_ALARM_SOURCE_RCONTROL "Пульт"
 #define CONFIG_ALARM_SOURCE_MQTT "Интернет"

@@ -19,21 +19,21 @@
 // EN: Common settings group friendly name
 // RU: Понятное название группы общих настроек
 #define CONFIG_MQTT_COMMON_FIENDLY "Общие параметры"
-// EN: QOS subscriptions to parameter values
-// RU: QOS подписки на значения параметров
-#define CONFIG_MQTT_PARAMS_QOS 2
-// EN: QOS subscriptions to local data
-// RU: QOS подписки на значения локальных данных
-#define CONFIG_MQTT_LOCDATA_QOS 2
-// EN: Save the last sent data on the broker
-// RU: Сохранять на брокере последние отправленные данные
-#define CONFIG_MQTT_PARAMS_RETAINED 0
-// EN: Save the last sent data on the broker
-// RU: Сохранять на брокере последние отправленные данные
-#define CONFIG_MQTT_LOCDATA_RETAINED 0
 // EN: Use wildcard # when subscribing to configuration topics ( /%location%/%device%/config/# ) instead of subscribing to each registered parameter separately
 // RU: Использовать # при подписке на топики настроек ( /%location%/%device%/config/# ) вместо подписки на каждый зарегистрированный параметр отдельно
 #define CONFIG_MQTT_PARAMS_WILDCARD 1
+// EN: QOS subscriptions to parameter values without confirmation
+// RU: QOS подписки на значения параметров без подтверждения
+#define CONFIG_MQTT_PARAMS_QOS 2
+// EN: Keep broker last sent data for parameters without confirmation
+// RU: Сохранять на брокере последние отправленные данные для параметров без подтверждения
+#define CONFIG_MQTT_PARAMS_RETAINED 1
+// EN: QOS subscriptions for local data
+// RU: QOS подписки для локальных данных
+#define CONFIG_MQTT_LOCDATA_QOS 2
+// EN: Save the last sent local data on the broker
+// RU: Сохранять на брокере последние отправленные локальные данные
+#define CONFIG_MQTT_LOCDATA_RETAINED 0
 // EN: Changing device parameters with confirmation: after receiving, the value of the received parameter will be re-published in another topic
 // RU: Изменение параметров устройства с подтверждением: после получения значение полученного параметра будет переопубликовано в другом топике
 #define CONFIG_MQTT_PARAMS_CONFIRM_ENABLED 1
