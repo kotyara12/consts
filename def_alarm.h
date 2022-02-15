@@ -7,13 +7,13 @@
 
 // EN: Timeouts for maintaining the active state of sensors (for sensors that transmit only an alarm signal, without a reset signal)
 // RU: Таймауты поддержания активного состояния сенсоров (для датчиков, которые передают только сигнал тревоги, без сигнала сброса)
-#define CONFIG_ALARM_TIMEOUT_RF_BUTTON       5000
-#define CONFIG_ALARM_TIMEOUT_RF_RCONTROL     3000
-#define CONFIG_ALARM_TIMEOUT_RF_PIR_MOTION   3000
-#define CONFIG_ALARM_TIMEOUT_RF_PERM         10000
-#define CONFIG_ALARM_TIMEOUT_RF_DOOR         10000
-#define CONFIG_ALARM_TIMEOUT_RF_TAMPER       10000
-#define CONFIG_ALARM_TIMEOUT_RF_LOW_BAT      3600000
+#define CONFIG_ALARM_TIMEOUT_RF_BUTTON       1000*3
+#define CONFIG_ALARM_TIMEOUT_RF_RCONTROL     1000*3
+#define CONFIG_ALARM_TIMEOUT_RF_PIR_MOTION   1000*10
+#define CONFIG_ALARM_TIMEOUT_RF_PERM         1000*10
+#define CONFIG_ALARM_TIMEOUT_RF_DOOR         1000*10
+#define CONFIG_ALARM_TIMEOUT_RF_TAMPER       1000*10
+#define CONFIG_ALARM_TIMEOUT_RF_LOW_BAT      1000*60*60*24
 
 // EN: Siren and flasher duration in seconds
 // RU: Длительность работы сирены и флешера в секундах
