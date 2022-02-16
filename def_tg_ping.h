@@ -11,5 +11,3 @@
 // EN: The number of "lost" pings before the notification is sent to the event loop
 // RU: Количество "потерянных" пингов, прежде чем будет отправлено уведомление в цикл событий
 #define CONFIG_TELEGRAM_HOST_CHECK_LIMIT 3
-#define CONFIG_TELEGRAM_HOST_CHECK_DURATION 500
-#define CONFIG_TELEGRAM_HOST_CHECK_LOSS 50.0

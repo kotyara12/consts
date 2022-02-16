@@ -13,6 +13,11 @@
 #define CONFIG_PINGER_TIMEOUT 1000
 #define CONFIG_PINGER_DATASIZE 32
 #define CONFIG_PINGER_LIMIT 3
+// EN: A list of no more than three ping servers. If you don't need three, comment out the extra ones.
+// RU: Список из не более чем трех серверов для пинга. Если не требуется три, закоментируйте лишние.
+#define CONFIG_PINGER_HOST_1 "yandex.ru"
+#define CONFIG_PINGER_HOST_2 "google.com"
+// #define CONFIG_PINGER_HOST_3 "8.8.8.8"
 // EN: The period of validity for determining the host's IP address in ms. Use 0 if not use this option
 // RU: Период валидности определения IP-адреса хоста в мс. Используйте 0, если не использовать эту опцию
 #define CONFIG_PINGER_IP_VALIDITY 1000*60*60
@@ -34,6 +39,51 @@
 // EN: Ping statuses
 // RU: Надписи для статусов пинга
 #define CONFIG_FORMAT_PING_OK "📶"
-#define CONFIG_FORMAT_PING_DELAYED "🐌"
+#define CONFIG_FORMAT_PING_SLOWDOWN "🐌"
 #define CONFIG_FORMAT_PING_UNAVAILABLED "⛔️"
+// EN: Parameters
+// RU: Параметры
+#define CONFIG_PINGER_PGROUP_ROOT_KEY "ping"
+#define CONFIG_PINGER_PGROUP_ROOT_TOPIC "ping"
+#define CONFIG_PINGER_PGROUP_ROOT_FRIENDLY "PING"
+// EN: Filter for "smoothing" ping results (0 - disabled, 1 - average, 2 - median)
+// RU: Фильтр для "сглаживания" результатов пинга (0 - отключено, 1 -  среднее, 2 - медиана)
+#define CONFIG_PINGER_FILTER_MODE 1
+#define CONFIG_PINGER_FILTER_SIZE 16
+// EN: Evaluate the final ping result by: 0 - the best value, 1 - the average value, 2 - the worst value
+// RU: Оценивать итоговый результат пинга по: 0 - лучшему значению, 1 - среднему значению, 2 - худшему значению
+#define CONFIG_PINGER_TOTAL_RESULT_MODE 1
+#define CONFIG_PINGER_PARAM_RESULT_MODE_KEY "result_mode"
+#define CONFIG_PINGER_PARAM_RESULT_MODE_FRIENDLY "Итоговое значение"
+// EN: Thresholds for latency and packet loss above which Internet access is considered "slow"
+// RU: Пороговые значения задержки и потери пакетов, при превышении которых доступ в интернет считается "медленным"
+#define CONFIG_PINGER_SLOWDOWN_DURATION 75
+#define CONFIG_PINGER_SLOWDOWN_LOSS 50.0
+#define CONFIG_PINGER_PARAM_SLOWDOWN_DURATION_KEY "slow/duration"
+#define CONFIG_PINGER_PARAM_SLOWDOWN_DURATION_FRIENDLY "Задержка при медленном интернете, мс"
+#define CONFIG_PINGER_PARAM_SLOWDOWN_LOSS_KEY "slow/loss"
+#define CONFIG_PINGER_PARAM_SLOWDOWN_LOSS_FRIENDLY "Ппотери при медленном интернете, %%"
+// EN: Thresholds for latency and packet loss above which Internet access is considered "unavalabled"
+// RU: Пороговые значения задержки и потери пакетов, при превышении которых доступ в интернет считается "не доступным"
+#define CONFIG_PINGER_UNAVAILABLE_DURATION 750
+#define CONFIG_PINGER_UNAVAILABLE_LOSS 75.0
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_DURATION_KEY "failed/duration"
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_DURATION_FRIENDLY "Задержка при остутствии доступа, мс"
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_LOSS_KEY "failed/loss"
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_LOSS_FRIENDLY "Потери при остутствии доступа, %%"
+// EN: If Internet access is completely lost: the number of checks after which network tasks will be suspended
+// RU: При полной потере доступа в интернет: количество проверок, после которых будут приостановлены сетевые задачи
+#define CONFIG_PINGER_UNAVAILABLE_THRESHOLD 3
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_THRESHOLD_KEY "failed/threshold"
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_THRESHOLD_FRIENDLY "Количество ошибок подряд для переключения режима"
+// EN: Normal mode check interval, in milliseconds. Counts from the BEGINNING of the last check (regular interval)
+// RU: Интервал проверки в нормальном режиме, в миллисекундах. Отсчитывается со времени НАЧАЛА последней проверки (равномерный интервал)
+#define CONFIG_PINGER_INTERVAL_AVAILABLE 60000 
+#define CONFIG_PINGER_PARAM_INTERVAL_AVAILABLE_KEY "intervals/good"
+#define CONFIG_PINGER_PARAM_INTERVAL_AVAILABLE_FRIENDLY "Интервал проверки при нормальном пинге, мс"
+// EN: Check interval when access is denied, in milliseconds. Counts since the END of the last check (irregular interval)
+// RU: Интервал проверки, когда доступ отсутствует, в миллисекундах. Отсчитывается со времени ОКОНЧАНИЯ последней проверки (неравномерный интервал)
+#define CONFIG_PINGER_INTERVAL_UNAVAILABLE 10000
+#define CONFIG_PINGER_PARAM_INTERVAL_UNAVAILABLE_KEY "intervals/failed"
+#define CONFIG_PINGER_PARAM_INTERVAL_UNAVAILABLE_FRIENDLY "Интервал проверки при плохом пинге, мс"
 
