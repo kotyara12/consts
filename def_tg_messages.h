@@ -18,7 +18,7 @@
 #define CONFIG_MESSAGE_TG_INET_SLOWDOWN "🟡 Доступ к <b>сети интернет</b> затруднён (канал связи загружен)" CONFIG_MESSAGE_TG_START_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_MQTT_CONN_OK "🟢 Подключение к MQTT брокеру <b>%s</b> восстановлено" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_MQTT_CONN_FAILED "🟡 Не удалось подключиться к MQTT брокеру <b>%s</b>"
-#define CONFIG_MESSAGE_TG_MQTT_CONN_LOST "🔴 Потеряно подключение к MQTT брокеру <b>%s</b>" CONFIG_MESSAGE_TG_START_UNAVAILABLE
+#define CONFIG_MESSAGE_TG_MQTT_CONN_LOST "🔴 Потеряно подключение к MQTT брокеру" CONFIG_MESSAGE_TG_START_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_PRIMARY "🔀 Выполнено переключение на <b><i>основной</i></b> MQTT брокер"
 #define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_RESERVED "🔀 Выполнено переключение на <b><i>резервный</i></b> MQTT брокер"
 #define CONFIG_MESSAGE_TG_MQTT_ERROR "🛑 Ошибка MQTT ''<b>%s</b>''!"

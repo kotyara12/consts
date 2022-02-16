@@ -21,6 +21,10 @@
 // EN: The period of validity for determining the host's IP address in ms. Use 0 if not use this option
 // RU: Период валидности определения IP-адреса хоста в мс. Используйте 0, если не использовать эту опцию
 #define CONFIG_PINGER_IP_VALIDITY 1000*60*60
+// EN: Filter for "smoothing" ping results (0 - disabled, 1 - average, 2 - median)
+// RU: Фильтр для "сглаживания" результатов пинга (0 - отключено, 1 -  среднее, 2 - медиана)
+#define CONFIG_PINGER_FILTER_MODE 1
+#define CONFIG_PINGER_FILTER_SIZE 32
 // EN: Format for ping response time
 // RU: Формат для времени ответа пинга
 #define CONFIG_FORMAT_PING_TIMERESP_VALUE "%d"
@@ -46,10 +50,6 @@
 #define CONFIG_PINGER_PGROUP_ROOT_KEY "ping"
 #define CONFIG_PINGER_PGROUP_ROOT_TOPIC "ping"
 #define CONFIG_PINGER_PGROUP_ROOT_FRIENDLY "PING"
-// EN: Filter for "smoothing" ping results (0 - disabled, 1 - average, 2 - median)
-// RU: Фильтр для "сглаживания" результатов пинга (0 - отключено, 1 -  среднее, 2 - медиана)
-#define CONFIG_PINGER_FILTER_MODE 1
-#define CONFIG_PINGER_FILTER_SIZE 16
 // EN: Evaluate the final ping result by: 0 - the best value, 1 - the average value, 2 - the worst value
 // RU: Оценивать итоговый результат пинга по: 0 - лучшему значению, 1 - среднему значению, 2 - худшему значению
 #define CONFIG_PINGER_TOTAL_RESULT_MODE 1

@@ -3,6 +3,7 @@
 #include "project_config.h"
 #include "def_led_modes.h"
 #include "def_events.h"
+#include "def_notify.h"
 #include "def_wifi.h"
 #include "def_ping.h"
 #include "def_pinger.h"
