@@ -8,6 +8,8 @@
 // EN: Buffer size for converting date and time to string
 // RU: Размер буфера для конвертации даты и времни в строку
 #define CONFIG_FORMAT_STRFTIME_BUFFER_SIZE 32
+#define CONFIG_FORMAT_STRFTIME_DTS_BUFFER_SIZE 20 // YYYY.MM.DD HH:NN:SS + \n
+#define CONFIG_FORMAT_STRFTIME_DTM_BUFFER_SIZE 17 // YYYY.MM.DD HH:NN + \n
 // EN: Textual representation of an "empty" date and time
 // RU: Текстовое представление "пустой" даты и времени
 #define CONFIG_FORMAT_EMPTY_DATETIME "---"

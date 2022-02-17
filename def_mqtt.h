@@ -21,6 +21,12 @@
 // EN: Receive buffer size in bytes
 // RU: Размер буфера приема в байтах
 #define CONFIG_MQTT_READ_BUFFER_SIZE 256      
+// EN: The maximum message size that can be sent through the outbox. Messages larger than this size will be sent directly to the task context
+// RU: Максимальный размер сообщения, который может быть отправлен через outbox. Сообщения больше этого размера, будут отправлены напрямую, в контекст задачи
+#define CONFIG_MQTT_MAX_OUTBOX_MESSAGE_SIZE 1024
+// EN: The maximum size of the outbox send queue. If the outbox already has the specified number of messages, then an attempt will be made to send directly
+// RU: Максимальный размер очереди отправки outbox. Если в outbox уже есть заданное количество сообщений, то будет предпринята попытка прямой отправки
+#define CONFIG_MQTT_MAX_OUTBOX_SIZE 4
 // EN: MQTT task stack size
 // RU: Параметры задачи MQTT
 #define CONFIG_MQTT_CLIENT_STACK_SIZE 4098

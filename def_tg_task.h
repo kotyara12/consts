@@ -17,7 +17,7 @@
 #define CONFIG_TELEGRAM_STACK_SIZE 4098
 // EN: Queue size for the task of sending notifications to Telegram
 // RU: Размер очереди для задачи отправки уведомлений в Telegram
-#define CONFIG_TELEGRAM_QUEUE_SIZE 16
+#define CONFIG_TELEGRAM_QUEUE_SIZE 8
 // EN: Priority of the task of sending notifications to Telegram
 // RU: Приоритет задачи отправки уведомлений в Telegram
 #define CONFIG_TELEGRAM_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY

@@ -57,7 +57,7 @@
 #define CONFIG_PINGER_PARAM_RESULT_MODE_FRIENDLY "Итоговое значение"
 // EN: Thresholds for latency and packet loss above which Internet access is considered "slow"
 // RU: Пороговые значения задержки и потери пакетов, при превышении которых доступ в интернет считается "медленным"
-#define CONFIG_PINGER_SLOWDOWN_DURATION 75
+#define CONFIG_PINGER_SLOWDOWN_DURATION 500
 #define CONFIG_PINGER_SLOWDOWN_LOSS 50.0
 #define CONFIG_PINGER_PARAM_SLOWDOWN_DURATION_KEY "slow/duration"
 #define CONFIG_PINGER_PARAM_SLOWDOWN_DURATION_FRIENDLY "Пинг при замедлении доступа, мс"
