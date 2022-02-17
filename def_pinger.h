@@ -60,17 +60,17 @@
 #define CONFIG_PINGER_SLOWDOWN_DURATION 75
 #define CONFIG_PINGER_SLOWDOWN_LOSS 50.0
 #define CONFIG_PINGER_PARAM_SLOWDOWN_DURATION_KEY "slow/duration"
-#define CONFIG_PINGER_PARAM_SLOWDOWN_DURATION_FRIENDLY "Задержка при медленном интернете, мс"
+#define CONFIG_PINGER_PARAM_SLOWDOWN_DURATION_FRIENDLY "Пинг при замедлении доступа, мс"
 #define CONFIG_PINGER_PARAM_SLOWDOWN_LOSS_KEY "slow/loss"
-#define CONFIG_PINGER_PARAM_SLOWDOWN_LOSS_FRIENDLY "Ппотери при медленном интернете, %%"
+#define CONFIG_PINGER_PARAM_SLOWDOWN_LOSS_FRIENDLY "Потери при замедлении доступа, %"
 // EN: Thresholds for latency and packet loss above which Internet access is considered "unavalabled"
 // RU: Пороговые значения задержки и потери пакетов, при превышении которых доступ в интернет считается "не доступным"
 #define CONFIG_PINGER_UNAVAILABLE_DURATION 750
 #define CONFIG_PINGER_UNAVAILABLE_LOSS 75.0
 #define CONFIG_PINGER_PARAM_UNAVAILABLE_DURATION_KEY "failed/duration"
-#define CONFIG_PINGER_PARAM_UNAVAILABLE_DURATION_FRIENDLY "Задержка при остутствии доступа, мс"
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_DURATION_FRIENDLY "Пинг при отсутствии доступа, мс"
 #define CONFIG_PINGER_PARAM_UNAVAILABLE_LOSS_KEY "failed/loss"
-#define CONFIG_PINGER_PARAM_UNAVAILABLE_LOSS_FRIENDLY "Потери при остутствии доступа, %%"
+#define CONFIG_PINGER_PARAM_UNAVAILABLE_LOSS_FRIENDLY "Потери при отсутствии доступа, %"
 // EN: If Internet access is completely lost: the number of checks after which network tasks will be suspended
 // RU: При полной потере доступа в интернет: количество проверок, после которых будут приостановлены сетевые задачи
 #define CONFIG_PINGER_UNAVAILABLE_THRESHOLD 3
