@@ -14,7 +14,6 @@
 #include "def_mqtt_params.h"
 #include "def_mqtt_commands.h"
 #include "def_mqtt_ota.h"
-#include "def_scheduler.h"
 #include "def_openmon.h"
 #include "def_thingspeak.h"
 #include "def_tg_messages.h"
