@@ -10,7 +10,7 @@
 #define CONFIG_OPENMON_MIN_INTERVAL 60000
 // EN: Server access interval in milliseconds for API failures
 // RU: Интервал обращения к серверу в миллисекундах при отказах API
-#define CONFIG_OPENMON_ERROR_INTERVAL 1000
+#define CONFIG_OPENMON_ERROR_INTERVAL 3000
 // EN: Use static memory allocation for the task and queue. CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION must be enabled!
 // RU: Использовать статическое выделение памяти под задачу и очередь. Должен быть включен параметр CONFIG_FREERTOS_SUPPORT_STATIC_ALLOCATION!
 #define CONFIG_OPENMON_STATIC_ALLOCATION 1

@@ -20,6 +20,10 @@
 #define CONFIG_ALARM_DURATION_SIREN 60
 #define CONFIG_ALARM_DURATION_FLASH 300
 
+// EN: Activate the alarm only after confirmation by any sensor within the specified time in ms. Set to 0 to disable
+// RU: Активировать тревогу только после подтверждения любым сенсором в течение заданного времени в мс. Поставьте 0 для отключения
+#define CONFIG_ALARM_CONFIRMATION_TIMEOUT 60*1000
+
 // EN: Timeout of waiting for completion of a packet of codes from wireless sensors
 // RU: Таймаут ожидания завершения пакета кодов с беспроводных сенсоров
 #define CONFIG_ALARM_TIMEOUT_ISR 250
@@ -90,6 +94,9 @@
 #define CONFIG_ALARM_PARAMS_FLASHER_DUR_FRIENDLY "Длительность световых вспышек"
 #define CONFIG_ALARM_PARAMS_BUZZER_KEY "buzzer"
 #define CONFIG_ALARM_PARAMS_BUZZER_FRIENDLY "Звуковой сигнал на пульте"
+#define CONFIG_ALARM_PARAMS_CONFIRMATION_TIMEOUT_KEY "confirmation"
+#define CONFIG_ALARM_PARAMS_CONFIRMATION_TIMEOUT_FRIENDLY "Время подтверждения тревоги (мс)"
+
 
 #define CONFIG_ALARM_PARAMS_QOS 1
 #define CONFIG_ALARM_PARAMS_MIN_DURATION 0
@@ -133,7 +140,8 @@
 #define CONFIG_ALARM_EVENT_MESSAGE_WATER "💧 Протечка воды"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_ON "🟩 Электропитание восстановлено"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_OFF "🟨 Электропитание отключено"
-#define CONFIG_ALARM_EVENT_MESSAGE_LOW_BATTERY "🔋 Низкий уровень заряда батареи"
+#define CONFIG_ALARM_EVENT_MESSAGE_BATTERY_LOW "🔋 Низкий уровень заряда батареи"
+#define CONFIG_ALARM_EVENT_MESSAGE_BATTERY_NRM "🔋 Аккумулятор заряжен"
 #define CONFIG_ALARM_EVENT_MESSAGE_BUTTON "🔔 Нажата тревожная кнопка"
 #define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_OFF CONFIG_ALARM_MODE_CHAR_DISABLED " Пульт: режим охраны отключен"
 #define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_ON CONFIG_ALARM_MODE_CHAR_ARMED " Пульт: режим охраны включен" 
@@ -159,7 +167,7 @@
 // RU: Шаблоны уведомлений в Telegram
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_CANCELED "🔕 Тревога <b>отключена</b> ( <b>%s</b> )"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_TEMPLATE "<b>%s</b>\n\n<code>Сенсор:   </code><b>%s</b>\n<code>Зона:     </code><b>%s</b>\n<code>Режим:    </code><b>%s</b>\n<code>Сирена:   </code><b>%s</b>\n<code>Время:    </code><b>%s</b>\n<code>Тревоги:  </code><b>%d</b>"
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_SENSOR_UNDEFINED_TEMPLATE "🟡 Получена команда от неизвестного датчика ОПС\n\n<code>Протокол: %d\nЗначение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_SENSOR_UNDEFINED_TEMPLATE "🟡 Получена команда от неизвестного датчика ОПС\n\n<code>Значение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_COMMAND_UNDEFINED_TEMPLATE "🟡 Получена неизвестная команда от датчика ОПС\n\n<code>Датчик:   %s\nЗначение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
 
 // EN: LED flash mode on input signal

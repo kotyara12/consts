@@ -5,7 +5,9 @@
 // ---------------------------------------------- EN - Messages ----------------------------------------------------------
 // ---------------------------------------------- RU - Сообщения ---------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
-#define CONFIG_MESSAGE_TG_VERSION "🔸 <b>Устройство запущено</b>\n\n<code>Версия прошивки:     </code><b>%s</b>\n<code>Причина перезапуска: </code><b>%s</b>\n<code>CPU0: </code><i>%s</i>\n<code>CPU1: </code><i>%s</i>"
+#define CONFIG_MESSAGE_TG_VERSION_DEF "🔸 <b>Устройство запущено</b>\n\n<code>Версия прошивки:     </code><b>%s</b>\n<code>Причина перезапуска: </code><b>%s</b>\n<code>CPU0: </code><i>%s</i>\n<code>CPU1: </code><i>%s</i>"
+#define CONFIG_MESSAGE_TG_VERSION_HEAP "🔸 <b>Устройство запущено</b>\n\n<code>Версия прошивки:     </code><b>%s</b>\n<code>Причина перезапуска: </code><b>%s</b>\n<code>CPU0: </code><i>%s</i>\n<code>CPU1: </code><i>%s</i>\n<code>HEAP: </code><i>%s</i>"
+#define CONFIG_MESSAGE_TG_VERSION_TRACE "🔸 <b>Устройство запущено</b>\n\n<code>Версия прошивки:     </code><b>%s</b>\n<code>Причина перезапуска: </code><b>%s</b>\n<code>CPU0:  </code><i>%s</i>\n<code>CPU1:  </code><i>%s</i>\n<code>HEAP:  </code><i>%s</i>\n<code>TRACE: </code><i>%s</i>"
 #define CONFIG_MESSAGE_TG_START_UNAVAILABLE "\n\n<code>Время начала проблем: </code><b>%s</b>"
 #define CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE "\n\n<code>Время начала проблем: </code><b>%s</b>\n<code>Время восстановления: </code><b>%s</b>\n<code>Проблемы наблюдались: </code><b>%d</b> час <b>%d</b> мин <b>%d</b> сек"
 #define CONFIG_MESSAGE_TG_HOST_AVAILABLE "💠 Доступ к <b>серверу</b> <b>%s</b> восстановлен" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
@@ -15,12 +17,12 @@
 #define CONFIG_MESSAGE_TG_HOST_UNAVAILABLE "🔴 <b>Сервер</b> <b>%s</b> <i>не доступен</i>" CONFIG_MESSAGE_TG_START_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_GWAY_UNAVAILABLE "🔴 <b>Роутер</b> не доступен"
 #define CONFIG_MESSAGE_TG_INET_UNAVAILABLE "🔴 Доступ к <b>сети интернет</b> потерян" CONFIG_MESSAGE_TG_START_UNAVAILABLE
-#define CONFIG_MESSAGE_TG_INET_SLOWDOWN "🟡 Доступ к <b>сети интернет</b> затруднён (канал связи загружен)" CONFIG_MESSAGE_TG_START_UNAVAILABLE
+#define CONFIG_MESSAGE_TG_INET_SLOWDOWN "🟡 Доступ к <b>сети интернет</b> затруднён" CONFIG_MESSAGE_TG_START_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_MQTT_CONN_OK "🟢 Подключение к MQTT брокеру <b>%s</b> восстановлено" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_MQTT_CONN_FAILED "🟡 Не удалось подключиться к MQTT брокеру <b>%s</b>"
-#define CONFIG_MESSAGE_TG_MQTT_CONN_LOST "🔴 Потеряно подключение к MQTT брокеру" CONFIG_MESSAGE_TG_START_UNAVAILABLE
-#define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_PRIMARY "🔀 Выполнено переключение на <b><i>основной</i></b> MQTT брокер"
-#define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_RESERVED "🔀 Выполнено переключение на <b><i>резервный</i></b> MQTT брокер"
+#define CONFIG_MESSAGE_TG_MQTT_CONN_LOST "🔴 Потеряно подключение к MQTT брокеру <b>%s</b>" CONFIG_MESSAGE_TG_START_UNAVAILABLE
+#define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_PRIMARY "🔀 Выполнено переключение на <b><i>основной</i></b> MQTT брокер <b>%s</b>"
+#define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_RESERVED "🔀 Выполнено переключение на <b><i>резервный</i></b> MQTT брокер <b>%s</b>"
 #define CONFIG_MESSAGE_TG_MQTT_ERROR "🛑 Ошибка MQTT ''<b>%s</b>''!"
 #define CONFIG_MESSAGE_TG_OTA "🆕 Загрузка новой версии прошивки по адресу: <b>%s</b>"
 #define CONFIG_MESSAGE_TG_CMD "🔤 Получена команда: <b>%s</b>"

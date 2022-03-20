@@ -24,7 +24,7 @@
 // EN: Filter for "smoothing" ping results (0 - disabled, 1 - average, 2 - median)
 // RU: Фильтр для "сглаживания" результатов пинга (0 - отключено, 1 -  среднее, 2 - медиана)
 #define CONFIG_PINGER_FILTER_MODE 1
-#define CONFIG_PINGER_FILTER_SIZE 32
+#define CONFIG_PINGER_FILTER_SIZE 64
 // EN: Format for ping response time
 // RU: Формат для времени ответа пинга
 #define CONFIG_FORMAT_PING_TIMERESP_VALUE "%d"

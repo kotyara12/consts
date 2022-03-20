@@ -8,8 +8,15 @@
 // EN: Parameters for the "silent" mode
 // RU: Параметры для "тихого" режима
 #if defined(CONFIG_SILENT_MODE_ENABLE) && CONFIG_SILENT_MODE_ENABLE
-#define CONFIG_SILENT_MODE_TOPIC "silent_mode"
-#define CONFIG_SILENT_MODE_NAME "Интервал времени суток без звуковых и световых оповещений"
+#if defined(CONFIG_SILENT_MODE_EXTENDED) && CONFIG_SILENT_MODE_EXTENDED
+#define CONFIG_SILENT_MODE_PGROUP_KEY "silent_mode"
+#define CONFIG_SILENT_MODE_PGROUP_TOPIC "silent_mode"
+#define CONFIG_SILENT_MODE_PGROUP_FRIENDLY "Тихий режим"
+#define CONFIG_SILENT_MODE_ENABLE_TOPIC "enable"
+#define CONFIG_SILENT_MODE_ENABLE_FRIENDLY "Разрешить переключение в тихий режим"
+#endif // CONFIG_SILENT_MODE_EXTENDED
+#define CONFIG_SILENT_MODE_TIMESPAN_TOPIC "timespan"
+#define CONFIG_SILENT_MODE_TIMESPAN_FRIENDLY "Интервал времени суток без звуковых и световых оповещений"
 #endif // CONFIG_SILENT_MODE_ENABLE
 
 // EN: Parameters for multi-tariff mode

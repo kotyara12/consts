@@ -6,6 +6,10 @@
 // ---------------------------------------------- RU - Уведомления -------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
 
+// EN: Allow notifications in Telegram (all types)
+// RU: Разрешить уведомления в Telegram (всех типов)
+#define CONFIG_NOTIFY_TELEGRAM_GLOBAL 0
+
 // EN: Parameters
 // RU: Параметры
 #define CONFIG_STATES_NOTIFY_PGROUP_ROOT_KEY "notifications"

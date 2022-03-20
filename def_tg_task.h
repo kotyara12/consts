@@ -26,7 +26,13 @@
 #define CONFIG_TELEGRAM_CORE 1
 // EN: Number of attempts to send notifications to Telegram
 // RU: Количество попыток отправки уведомлений в Telegram
-#define CONFIG_TELEGRAM_MAX_ATTEMPTS 3
+#define CONFIG_TELEGRAM_MAX_ATTEMPTS 10
 // EN: The interval between attempts to send notifications to Telegram
 // RU: Интервал между попытками отправки уведомлений в Telegram
 #define CONFIG_TELEGRAM_ATTEMPTS_INTERVAL 3000
+// EN: WiFi availability timeout
+// RU: Время ожидания доступности WiFi
+#define CONFIG_TELEGRAM_WIFI_TIMEOUT 1000*60*60
+// EN: Internet availability timeout
+// RU: Время ожидания доступности интернета
+#define CONFIG_TELEGRAM_INTERNET_TIMEOUT 1000*60*10
