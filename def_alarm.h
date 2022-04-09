@@ -5,6 +5,15 @@
 // RU: Максимальное количество событий, которое можно назначить на один сенсор
 #define CONFIG_ALARM_MAX_EVENTS 4
 
+// EN: GPIO address translation for I2C port expanders
+// RU: Преобразование адреса GPIO для I2C расширителей портов
+#define CONFIG_ALARM_IOEXP_SENSOR(bus, address, pin) ((((bus)+1) << 16) | ((address) << 8) | (pin))
+
+// EN: Timeouts for resetting 2-wire smoke detectors after triggering
+// RU: Таймауты сброса 2-х проводных датчиков дыма после срабатывания
+#define CONFIG_ALARM_IOEXP_FIRE_RESET_DELAY_US 5000000
+#define CONFIG_ALARM_IOEXP_FIRE_RESET_RESET_US 5000000
+
 // EN: Timeouts for maintaining the active state of sensors (for sensors that transmit only an alarm signal, without a reset signal)
 // RU: Таймауты поддержания активного состояния сенсоров (для датчиков, которые передают только сигнал тревоги, без сигнала сброса)
 #define CONFIG_ALARM_TIMEOUT_RF_BUTTON       1000*3
@@ -12,6 +21,7 @@
 #define CONFIG_ALARM_TIMEOUT_RF_PIR_MOTION   1000*10
 #define CONFIG_ALARM_TIMEOUT_RF_PERM         1000*10
 #define CONFIG_ALARM_TIMEOUT_RF_DOOR         1000*10
+#define CONFIG_ALARM_TIMEOUT_RF_SMOKE        1000*60
 #define CONFIG_ALARM_TIMEOUT_RF_TAMPER       1000*10
 #define CONFIG_ALARM_TIMEOUT_RF_LOW_BAT      1000*60*60*24
 
@@ -76,6 +86,13 @@
 #define CONFIG_ALARM_MQTT_EVENTS_ASE_CONTROL_PERIMETER "control/perimeter"
 #define CONFIG_ALARM_MQTT_EVENTS_ASE_CONTROL_OUTBUILDINGS "control/outbuildings"
 
+// EN: MQTT - unknown sensors
+// RU: MQTT - неизвестные датчики
+#define CONFIG_ALARM_MQTT_RX433_UNKNOWN_TOPIC "rx433new"
+#define CONFIG_ALARM_MQTT_RX433_UNKNOWN_LOCAL 0
+#define CONFIG_ALARM_MQTT_RX433_UNKNOWN_QOS 0
+#define CONFIG_ALARM_MQTT_RX433_UNKNOWN_RETAINED 1
+
 // EN: Settings
 // RU: Параметры
 #define CONFIG_ALARM_PARAMS_ROOT_KEY "security"
@@ -96,6 +113,8 @@
 #define CONFIG_ALARM_PARAMS_BUZZER_FRIENDLY "Звуковой сигнал на пульте"
 #define CONFIG_ALARM_PARAMS_CONFIRMATION_TIMEOUT_KEY "confirmation"
 #define CONFIG_ALARM_PARAMS_CONFIRMATION_TIMEOUT_FRIENDLY "Время подтверждения тревоги (мс)"
+#define CONFIG_ALARM_PARAMS_FIX_RX433_CODES_KEY "fix_433_codes"
+#define CONFIG_ALARM_PARAMS_FIX_RX433_CODES_FRIENDLY "Фиксировать новые RX433 коды"
 
 
 #define CONFIG_ALARM_PARAMS_QOS 1
@@ -133,13 +152,19 @@
 // EN: Text descriptions of security events
 // RU: Текстовые описания событий охраны
 #define CONFIG_ALARM_EVENT_MESSAGE_TAMPER "⚠️ Попытка взлома датчика"
+#define CONFIG_ALARM_EVENT_MESSAGE_CLOSED "💠 Датчик восстановлен"
+#define CONFIG_ALARM_EVENT_MESSAGE_UNKNOWN "🚨 Неизвестная тревога"
 #define CONFIG_ALARM_EVENT_MESSAGE_DOOROPEN "🚨 Открыта дверь"
 #define CONFIG_ALARM_EVENT_MESSAGE_MOTION "🚨 Обнаружено движение"
 #define CONFIG_ALARM_EVENT_MESSAGE_GAS "🚨 Обнаружена утечка газа"
+#define CONFIG_ALARM_EVENT_MESSAGE_CMOX "🚨 Обнаружен угарный газ"
 #define CONFIG_ALARM_EVENT_MESSAGE_SMOKE "🔥 Обнаружено задымление"
 #define CONFIG_ALARM_EVENT_MESSAGE_WATER "💧 Протечка воды"
+#define CONFIG_ALARM_EVENT_MESSAGE_CLEAR "🟢 Авария устранена"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_ON "🟩 Электропитание восстановлено"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_OFF "🟨 Электропитание отключено"
+#define CONFIG_ALARM_EVENT_MESSAGE_POWER_MAIN_ON "💡 Основное питание восстановлено"
+#define CONFIG_ALARM_EVENT_MESSAGE_POWER_MAIN_OFF "🔌 Основное питание отключено"
 #define CONFIG_ALARM_EVENT_MESSAGE_BATTERY_LOW "🔋 Низкий уровень заряда батареи"
 #define CONFIG_ALARM_EVENT_MESSAGE_BATTERY_NRM "🔋 Аккумулятор заряжен"
 #define CONFIG_ALARM_EVENT_MESSAGE_BUTTON "🔔 Нажата тревожная кнопка"

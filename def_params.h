@@ -9,14 +9,17 @@
 // RU: Параметры для "тихого" режима
 #if defined(CONFIG_SILENT_MODE_ENABLE) && CONFIG_SILENT_MODE_ENABLE
 #if defined(CONFIG_SILENT_MODE_EXTENDED) && CONFIG_SILENT_MODE_EXTENDED
-#define CONFIG_SILENT_MODE_PGROUP_KEY "silent_mode"
-#define CONFIG_SILENT_MODE_PGROUP_TOPIC "silent_mode"
-#define CONFIG_SILENT_MODE_PGROUP_FRIENDLY "Тихий режим"
-#define CONFIG_SILENT_MODE_ENABLE_TOPIC "enable"
-#define CONFIG_SILENT_MODE_ENABLE_FRIENDLY "Разрешить переключение в тихий режим"
+  #define CONFIG_SILENT_MODE_PGROUP_KEY "silent_mode"
+  #define CONFIG_SILENT_MODE_PGROUP_TOPIC "silent_mode"
+  #define CONFIG_SILENT_MODE_PGROUP_FRIENDLY "Тихий режим"
+  #define CONFIG_SILENT_MODE_ENABLE_TOPIC "enable"
+  #define CONFIG_SILENT_MODE_ENABLE_FRIENDLY "Разрешить переключение в тихий режим"
+  #define CONFIG_SILENT_MODE_TIMESPAN_TOPIC "timespan"
+  #define CONFIG_SILENT_MODE_TIMESPAN_FRIENDLY "Интервал времени суток без звуковых и световых оповещений"
+#else
+  #define CONFIG_SILENT_MODE_TOPIC "silent_mode"
+  #define CONFIG_SILENT_MODE_FRIENDLY "Интервал времени суток без звуковых и световых оповещений"
 #endif // CONFIG_SILENT_MODE_EXTENDED
-#define CONFIG_SILENT_MODE_TIMESPAN_TOPIC "timespan"
-#define CONFIG_SILENT_MODE_TIMESPAN_FRIENDLY "Интервал времени суток без звуковых и световых оповещений"
 #endif // CONFIG_SILENT_MODE_ENABLE
 
 // EN: Parameters for multi-tariff mode
@@ -76,6 +79,10 @@
 // RU: Параметр сенсора, с помощью которого можно подкорректировать значение (если известно, что сенсор "врет")
 #define CONFIG_SENSOR_PARAM_OFFSET_KEY "offset"
 #define CONFIG_SENSOR_PARAM_OFFSET_FRIENDLY "Корректировка значения"
+// EN: Sensor parameter to multiply the raw value by to get the actual value)
+// RU: Параметр сенсора, на который следует умножить raw значение для получения действительного значения)
+#define CONFIG_SENSOR_PARAM_COEF_KEY "factor"
+#define CONFIG_SENSOR_PARAM_COEF_FRIENDLY "Множитель"
 // EN: Sensor parameter responsible for selecting the type of value filter
 // RU: Параметр сенсора, отвечающий за выбор типа фильтра значений
 #define CONFIG_SENSOR_PARAM_FILTERMODE_KEY "filter_mode"

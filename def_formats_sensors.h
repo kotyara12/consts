@@ -55,13 +55,26 @@
 #define CONFIG_FORMAT_PRESSURE_UNIT UNIT_PRESSURE_MMHG 
 // EN: Format for air pressure as a string
 // RU: Формат для давления воздуха в виде строки
-#define CONFIG_FORMAT_PRESSURE_STRING "%.1f"
+#define CONFIG_FORMAT_PRESSURE_STRING "%.0fмм"
 // EN: Air quality format
 // RU: Формат для качества воздуха
 #define CONFIG_FORMAT_IAQ_VALUE "%.1f"
 // EN: Format for air quality as a string
 // RU: Формат для качества воздуха в виде строки
 #define CONFIG_FORMAT_IAQ_STRING "%.1f"
+// EN: ADC default format
+// RU: Формат для ADC по умолчанию
+#define CONFIG_FORMAT_ADC_VALUE "%.3f"
+// EN: Format for ADC default as a string
+// RU: Формат для ADC по умолчанию в виде строки
+#define CONFIG_FORMAT_ADC_STRING "%.3f"
+// EN: Voltage format
+// RU: Формат для напряжения
+#define CONFIG_FORMAT_VOLTAGE_VALUE "%.2f"
+// EN: Format for voltage as a string
+// RU: Формат для напряжения в виде строки
+#define CONFIG_FORMAT_VOLTAGE_STRING "%.2fВ"
+/********************************************************************************************
 // EN: Format for single values 
 // RU: Формат для одного значения
 #define CONFIG_FORMAT_MIXED_STRING1 "%s"
@@ -71,4 +84,4 @@
 // EN: Format for three values (e.g. temperature, humidity and pressure) in one bottle
 // RU: Формат для трех значений (например температуры, влажности и давления) в одном флаконе
 #define CONFIG_FORMAT_MIXED_STRING3 "%s" CONFIG_JSON_CHAR_EOL "%s" CONFIG_JSON_CHAR_EOL "%s"
-
+********************************************************************************************/

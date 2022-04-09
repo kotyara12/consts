@@ -94,3 +94,13 @@
 #define CONFIG_SENSOR_IAQ_NAME "iaq"
 #define CONFIG_SENSOR_IAQ_KEY "iaq"
 #define CONFIG_SENSOR_IAQ_FRIENDLY "Качество воздуха"
+// EN: Sensor name for ADC
+// RU: Название сенсора для ADC
+#define CONFIG_SENSOR_ADC_NAME "adc"
+#define CONFIG_SENSOR_ADC_KEY "adc"
+#define CONFIG_SENSOR_ADC_FRIENDLY "ADC"
+// EN: Sensor name for voltage
+// RU: Название сенсора для напряжения
+#define CONFIG_SENSOR_VOLTAGE_NAME "voltage"
+#define CONFIG_SENSOR_VOLTAGE_KEY "vol"
+#define CONFIG_SENSOR_VOLTAGE_FRIENDLY "Напряжение"
