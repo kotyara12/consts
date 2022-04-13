@@ -55,13 +55,25 @@
 #define CONFIG_FORMAT_PRESSURE_UNIT UNIT_PRESSURE_MMHG 
 // EN: Format for air pressure as a string
 // RU: Формат для давления воздуха в виде строки
-#define CONFIG_FORMAT_PRESSURE_STRING "%.0fмм"
+#define CONFIG_FORMAT_PRESSURE_STRING "%.0f мм"
 // EN: Air quality format
 // RU: Формат для качества воздуха
 #define CONFIG_FORMAT_IAQ_VALUE "%.1f"
 // EN: Format for air quality as a string
 // RU: Формат для качества воздуха в виде строки
 #define CONFIG_FORMAT_IAQ_STRING "%.1f"
+// EN: Air quality format
+// RU: Формат для качества воздуха
+#define CONFIG_FORMAT_TVOC_VALUE "%.0f"
+// EN: Format for air quality as a string
+// RU: Формат для качества воздуха в виде строки
+#define CONFIG_FORMAT_TVOC_STRING "%.0f"
+// EN: CO2 format
+// RU: Формат для CO2
+#define CONFIG_FORMAT_CO2_VALUE "%.0f"
+// EN: Format for CO2 as a string
+// RU: Формат для CO2 в виде строки
+#define CONFIG_FORMAT_CO2_STRING "%.0f"
 // EN: ADC default format
 // RU: Формат для ADC по умолчанию
 #define CONFIG_FORMAT_ADC_VALUE "%.3f"
@@ -73,7 +85,7 @@
 #define CONFIG_FORMAT_VOLTAGE_VALUE "%.2f"
 // EN: Format for voltage as a string
 // RU: Формат для напряжения в виде строки
-#define CONFIG_FORMAT_VOLTAGE_STRING "%.2fВ"
+#define CONFIG_FORMAT_VOLTAGE_STRING "%.2f В"
 /********************************************************************************************
 // EN: Format for single values 
 // RU: Формат для одного значения

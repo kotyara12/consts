@@ -59,6 +59,10 @@
 #define CONFIG_SENSOR_PGROUP_INTERVALS_KEY "intv"
 #define CONFIG_SENSOR_PGROUP_INTERVALS_TOPIC "intervals"
 #define CONFIG_SENSOR_PGROUP_INTERVALS_FRIENDLY "Интервалы отправки данных"
+// EN: Interval for reading data from sensors
+// RU: Интервал чтения данных с сенсоров
+#define CONFIG_SENSOR_PARAM_INTERVAL_READ_KEY "read"
+#define CONFIG_SENSOR_PARAM_INTERVAL_READ_FRIENDLY "Интервал чтения данных с сенсоров"
 // EN: The interval for publishing data on the MQTT server
 // RU: Интервал публикации данных на MQTT сервере
 #define CONFIG_SENSOR_PARAM_INTERVAL_MQTT_KEY "mqtt"

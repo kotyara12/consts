@@ -13,12 +13,13 @@
 #define CONFIG_SENSOR_LOCAL_EXCHANGE "sensors"
 // EN: Sensor status text value
 // RU: Текстовое значение статуса сенсора
-#define CONFIG_SENSOR_STATUS_NAN "NO DATA"
-#define CONFIG_SENSOR_STATUS_OK "OK"
-#define CONFIG_SENSOR_STATUS_TIMEOUT "TIMEOUT"
-#define CONFIG_SENSOR_STATUS_CALIBRATION "SENSOR FAILED"
+#define CONFIG_SENSOR_STATUS_NO_INIT "NO INIT"
+#define CONFIG_SENSOR_STATUS_NO_DATA "NO DATA"
+#define CONFIG_SENSOR_STATUS_CONNECT "CONN ERROR"
+#define CONFIG_SENSOR_STATUS_CALIBRATION "CAL FAILED"
 #define CONFIG_SENSOR_STATUS_CRC_ERROR "CRC ERROR"
 #define CONFIG_SENSOR_STATUS_ERROR "ERROR"
+#define CONFIG_SENSOR_STATUS_OK "OK"
 #define CONFIG_SENSOR_STATUS_UNKNOWN "UNKNOWN"
 // EN: If "1", then in case of errors replace the displayed (mixed) sensor value with the status
 // RU: Если "1", то при ошибках заменять отображаемое (смешанное) значение сенсора на статус
@@ -94,6 +95,16 @@
 #define CONFIG_SENSOR_IAQ_NAME "iaq"
 #define CONFIG_SENSOR_IAQ_KEY "iaq"
 #define CONFIG_SENSOR_IAQ_FRIENDLY "Качество воздуха"
+// EN: Sensor name for air quality
+// RU: Название сенсора для качества воздуха
+#define CONFIG_SENSOR_TVOC_NAME "tvoc"
+#define CONFIG_SENSOR_TVOC_KEY "tvoc"
+#define CONFIG_SENSOR_TVOC_FRIENDLY "Качество воздуха"
+// EN: Sensor name for CO2
+// RU: Название сенсора для CO2
+#define CONFIG_SENSOR_CO2_NAME "co2"
+#define CONFIG_SENSOR_CO2_KEY "co2"
+#define CONFIG_SENSOR_CO2_FRIENDLY "CO2"
 // EN: Sensor name for ADC
 // RU: Название сенсора для ADC
 #define CONFIG_SENSOR_ADC_NAME "adc"

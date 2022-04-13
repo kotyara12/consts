@@ -191,6 +191,7 @@
 // EN: Telegram notification templates
 // RU: Шаблоны уведомлений в Telegram
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_CANCELED "🔕 Тревога <b>отключена</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_RESET "💠 Счетчик тревог сброшен ( <b>%s</b> )"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_TEMPLATE "<b>%s</b>\n\n<code>Сенсор:   </code><b>%s</b>\n<code>Зона:     </code><b>%s</b>\n<code>Режим:    </code><b>%s</b>\n<code>Сирена:   </code><b>%s</b>\n<code>Время:    </code><b>%s</b>\n<code>Тревоги:  </code><b>%d</b>"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_SENSOR_UNDEFINED_TEMPLATE "🟡 Получена команда от неизвестного датчика ОПС\n\n<code>Значение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_COMMAND_UNDEFINED_TEMPLATE "🟡 Получена неизвестная команда от датчика ОПС\n\n<code>Датчик:   %s\nЗначение: 0x%.8X\nАдрес:    0x%.8X\nКоманда:  0x%02X</code>"
