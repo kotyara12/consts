@@ -30,6 +30,10 @@
 #define CONFIG_ALARM_DURATION_SIREN 60
 #define CONFIG_ALARM_DURATION_FLASH 300
 
+// EN: Time to leave the premises after arming, in seconds
+// RU: Время на выход из помещения после включения режима охраны в секундах
+#define CONFIG_ALARM_EXIT_TIME 60
+
 // EN: Activate the alarm only after confirmation by any sensor within the specified time in ms. Set to 0 to disable
 // RU: Активировать тревогу только после подтверждения любым сенсором в течение заданного времени в мс. Поставьте 0 для отключения
 #define CONFIG_ALARM_CONFIRMATION_TIMEOUT 60*1000
@@ -113,6 +117,8 @@
 #define CONFIG_ALARM_PARAMS_BUZZER_FRIENDLY "Звуковой сигнал на пульте"
 #define CONFIG_ALARM_PARAMS_CONFIRMATION_TIMEOUT_KEY "confirmation"
 #define CONFIG_ALARM_PARAMS_CONFIRMATION_TIMEOUT_FRIENDLY "Время подтверждения тревоги (мс)"
+#define CONFIG_ALARM_PARAMS_EXIT_TIME_KEY "exit_time"
+#define CONFIG_ALARM_PARAMS_EXIT_TIME_FRIENDLY "Время на выход из зоны охраны (сек)"
 #define CONFIG_ALARM_PARAMS_FIX_RX433_CODES_KEY "fix_433_codes"
 #define CONFIG_ALARM_PARAMS_FIX_RX433_CODES_FRIENDLY "Фиксировать новые RX433 коды"
 
@@ -187,6 +193,7 @@
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ARMED CONFIG_ALARM_MODE_CHAR_ARMED " Охрана <b>включена</b> ( <b>%s</b> )"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_PERIMETER CONFIG_ALARM_MODE_CHAR_PERIMETER " Включена <b>охрана периметра</b> ( <b>%s</b> )"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_OUTBUILDINGS CONFIG_ALARM_MODE_CHAR_OUTBUILDINGS " Включена <b>охрана внешних помещений</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ACTIVATED "🔕 Время выхода из зоны охраны истекло, <i>режим охраны активирован</i>"
 
 // EN: Telegram notification templates
 // RU: Шаблоны уведомлений в Telegram
