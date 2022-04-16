@@ -5,7 +5,8 @@
 // ---------------------------------------------------- EN - System led --------------------------------------------------
 // ------------------------------------------------ RU - Светодиод состояния ---------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
-#define CONFIG_LED_QUEUE_SIZE 3
+#define CONFIG_LED_QUEUE_SIZE 8
+#define CONFIG_LED_QUEUE_WAIT pdMS_TO_TICKS(250)
 #define CONFIG_LED_TASK_STACK_SIZE 1024
 #define CONFIG_LED_TASK_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY+5
 #define CONFIG_LED_TASK_CORE 1
