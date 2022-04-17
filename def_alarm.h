@@ -190,10 +190,11 @@
 // EN: Telegram notifications when switching the security mode
 // RU: Уведомления в Telegram при переключении режима охраны
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_DISABLED CONFIG_ALARM_MODE_CHAR_DISABLED " Охрана <b>отключена</b> ( <b>%s</b> )"
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ARMED CONFIG_ALARM_MODE_CHAR_ARMED " Охрана <b>включена</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ARMED_INSTANT CONFIG_ALARM_MODE_CHAR_ARMED " Охрана <b>включена</b> ( <b>%s</b> )"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ARMED_DELAYED "🕘 Охрана <b>включена с задержкой на выход %d секунд(ы)</b> ( <b>%s</b> ). <i>Необходимо покинуть зону охраны за указанное время</i>"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_PERIMETER CONFIG_ALARM_MODE_CHAR_PERIMETER " Включена <b>охрана периметра</b> ( <b>%s</b> )"
 #define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_OUTBUILDINGS CONFIG_ALARM_MODE_CHAR_OUTBUILDINGS " Включена <b>охрана внешних помещений</b> ( <b>%s</b> )"
-#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ACTIVATED "🔕 Время выхода из зоны охраны истекло, <i>режим охраны активирован</i>"
+#define CONFIG_NOTIFY_TELEGRAM_ALARM_MODE_ACTIVATED CONFIG_ALARM_MODE_CHAR_ARMED " Время выхода из зоны охраны истекло, <b>режим охраны активирован</b>"
 
 // EN: Telegram notification templates
 // RU: Шаблоны уведомлений в Telegram
