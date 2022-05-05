@@ -18,11 +18,12 @@
 // RU: Таймауты поддержания активного состояния сенсоров (для датчиков, которые передают только сигнал тревоги, без сигнала сброса)
 #define CONFIG_ALARM_TIMEOUT_RF_BUTTON       1000*3
 #define CONFIG_ALARM_TIMEOUT_RF_RCONTROL     1000*3
-#define CONFIG_ALARM_TIMEOUT_RF_PIR_MOTION   1000*10
-#define CONFIG_ALARM_TIMEOUT_RF_PERM         1000*10
-#define CONFIG_ALARM_TIMEOUT_RF_DOOR         1000*10
+#define CONFIG_ALARM_TIMEOUT_RF_PIR_MOTION   1000*30
+#define CONFIG_ALARM_TIMEOUT_RF_PERM         1000*60
+#define CONFIG_ALARM_TIMEOUT_RF_DOOR         1000*30
 #define CONFIG_ALARM_TIMEOUT_RF_SMOKE        1000*60
-#define CONFIG_ALARM_TIMEOUT_RF_TAMPER       1000*10
+#define CONFIG_ALARM_TIMEOUT_RF_CO           1000*60*5
+#define CONFIG_ALARM_TIMEOUT_RF_TAMPER       1000*60*5
 #define CONFIG_ALARM_TIMEOUT_RF_LOW_BAT      1000*60*60*24
 
 // EN: Siren and flasher duration in seconds
@@ -147,6 +148,7 @@
 #define CONFIG_ALARM_SIREN_DISABLED "Отключена"
 #define CONFIG_ALARM_SIREN_ENABLED "Включена"
 
+// EN: Text commands
 // RU: Текстовые команды
 #define CONFIG_ALARM_COMMAND_MODE_DISABLED "alarm off"
 #define CONFIG_ALARM_COMMAND_MODE_ARMED "alarm full"
@@ -170,10 +172,11 @@
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_ON "🟩 Электропитание восстановлено"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_OFF "🟨 Электропитание отключено"
 #define CONFIG_ALARM_EVENT_MESSAGE_POWER_MAIN_ON "💡 Основное питание восстановлено"
-#define CONFIG_ALARM_EVENT_MESSAGE_POWER_MAIN_OFF "🔌 Основное питание отключено"
+#define CONFIG_ALARM_EVENT_MESSAGE_POWER_MAIN_OFF "🔴 Основное питание отключено"
 #define CONFIG_ALARM_EVENT_MESSAGE_BATTERY_LOW "🔋 Низкий уровень заряда батареи"
 #define CONFIG_ALARM_EVENT_MESSAGE_BATTERY_NRM "🔋 Аккумулятор заряжен"
-#define CONFIG_ALARM_EVENT_MESSAGE_BUTTON "🔔 Нажата тревожная кнопка"
+#define CONFIG_ALARM_EVENT_MESSAGE_DOORBELL "🔔 Звонок в дверь"
+#define CONFIG_ALARM_EVENT_MESSAGE_BUTTON "🔴 Нажата тревожная кнопка"
 #define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_OFF CONFIG_ALARM_MODE_CHAR_DISABLED " Пульт: режим охраны отключен"
 #define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_ON CONFIG_ALARM_MODE_CHAR_ARMED " Пульт: режим охраны включен" 
 #define CONFIG_ALARM_EVENT_MESSAGE_RCTRL_PERIMETER CONFIG_ALARM_MODE_CHAR_PERIMETER " Пульт: режим охраны периметра"

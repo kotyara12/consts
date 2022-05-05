@@ -70,6 +70,12 @@
 // RU: Название субтопика или JSON-ключа для ежедневного минимума и максимума
 #define CONFIG_SENSOR_EXTREMUMS_DAILY "daily"
 
+// EN: Text commands
+// RU: Текстовые команды
+#define CONFIG_SENSOR_COMMAND_TG_NOTIFY 1
+#define CONFIG_SENSOR_COMMAND_EXTR_RESET "clrextr"
+#define CONFIG_SENSOR_COMMAND_SENSORS_PREFIX "sensors"
+
 // EN: Sensor name for temperature
 // RU: Название сенсора для температуры
 #define CONFIG_SENSOR_TEMP_NAME "temperature"

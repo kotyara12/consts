@@ -15,6 +15,7 @@
 #include "def_mqtt_commands.h"
 #include "def_mqtt_ota.h"
 #include "def_openmon.h"
+#include "def_narodmon.h"
 #include "def_thingspeak.h"
 #include "def_tg_messages.h"
 #include "def_tg_task.h"

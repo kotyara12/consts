@@ -71,6 +71,10 @@
 // RU: Интервал публикации данных на open-monitoring.online
 #define CONFIG_SENSOR_PARAM_INTERVAL_OPENMON_KEY "openmon"
 #define CONFIG_SENSOR_PARAM_INTERVAL_OPENMON_FRIENDLY "Интервал отправки данных с сенсоров на open-monitoring.online"
+// EN: The interval for publishing data on the narodmon.ru
+// RU: Интервал публикации данных на narodmon.ru
+#define CONFIG_SENSOR_PARAM_INTERVAL_NARODMON_KEY "narodmon"
+#define CONFIG_SENSOR_PARAM_INTERVAL_NARODMON_FRIENDLY "Интервал отправки данных с сенсоров на narodmon.ru"
 // EN: The interval for publishing data on the thingspeak.com
 // RU: Интервал публикации данных на thingspeak.com
 #define CONFIG_SENSOR_PARAM_INTERVAL_THINGSPEAK_KEY "thingspeak"
