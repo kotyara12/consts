@@ -87,6 +87,10 @@
 // RU: Параметр сенсора, с помощью которого можно подкорректировать значение (если известно, что сенсор "врет")
 #define CONFIG_SENSOR_PARAM_OFFSET_KEY "offset"
 #define CONFIG_SENSOR_PARAM_OFFSET_FRIENDLY "Корректировка значения"
+// EN: The maximum allowed change in value between adjacent measurements. If the deviation is greater than the specified one, we consider that the sensor is "lying"
+// RU: Максимально допустимое изменение значения между соседними измерениями. Если отклонение больше заданного, считаем что сенсор "врет"
+#define CONFIG_SENSOR_PARAM_DELTAMAX_KEY "delta_max"
+#define CONFIG_SENSOR_PARAM_DELTAMAX_FRIENDLY "Максимальная дельта"
 // EN: Sensor parameter to multiply the raw value by to get the actual value)
 // RU: Параметр сенсора, на который следует умножить raw значение для получения действительного значения)
 #define CONFIG_SENSOR_PARAM_COEF_KEY "factor"

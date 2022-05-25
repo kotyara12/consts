@@ -40,6 +40,7 @@
 #define CONFIG_MESSAGE_TG_SENSOR_STATE_OK "🆗 Работоспособность сенсора [ <b>%s</b> ] восстановлена"
 #define CONFIG_MESSAGE_TG_SENSOR_STATE_NO_INIT "⚠️ Сенсор [ <b>%s</b> ] не инициализирован!"
 #define CONFIG_MESSAGE_TG_SENSOR_STATE_NO_DATA "⚠️ Не удалось получить данные с сенсора [ <b>%s</b> ]"
+#define CONFIG_MESSAGE_TG_SENSOR_STATE_BAD_DATA "⚠️ Получены неверные данные с сенсора [ <b>%s</b> ]"
 #define CONFIG_MESSAGE_TG_SENSOR_STATE_CONN_ERROR "🆘 Сенсор [ <b>%s</b> ] не исправен или не доступен"
 #define CONFIG_MESSAGE_TG_SENSOR_STATE_CAL_ERROR "🆑 Ошибка загрузки данных калибровки для сенсора [ <b>%s</b> ]"
 #define CONFIG_MESSAGE_TG_SENSOR_STATE_CRC_ERROR "🆘 Ошибка контрольной суммы при получении данных с сенсора [ <b>%s</b> ]"

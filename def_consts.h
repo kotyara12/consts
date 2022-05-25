@@ -19,7 +19,6 @@
 #include "def_thingspeak.h"
 #include "def_tg_messages.h"
 #include "def_tg_task.h"
-#include "def_tg_ping.h"
 #include "def_params.h"
 #include "def_sensors.h"
 #include "def_formats.h"

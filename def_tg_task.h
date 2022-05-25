@@ -18,21 +18,24 @@
 // EN: Queue size for the task of sending notifications to Telegram
 // RU: Размер очереди для задачи отправки уведомлений в Telegram
 #define CONFIG_TELEGRAM_QUEUE_SIZE 8
+// EN: Time to wait for a message to be sent to the queue in milliseconds
+// RU: Время ожидания отправки сообщения в очередь в миллисекундах
+#define CONFIG_TELEGRAM_QUEUE_WAIT 10000
 // EN: Priority of the task of sending notifications to Telegram
 // RU: Приоритет задачи отправки уведомлений в Telegram
 #define CONFIG_TELEGRAM_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY
 // EN: The processor core for the task of sending notifications to Telegram
 // RU: Ядро процессора для задачи отправки уведомлений в Telegram
 #define CONFIG_TELEGRAM_CORE 1
-// EN: Number of attempts to send notifications to Telegram
-// RU: Количество попыток отправки уведомлений в Telegram
-#define CONFIG_TELEGRAM_MAX_ATTEMPTS 10
-// EN: The interval between attempts to send notifications to Telegram
-// RU: Интервал между попытками отправки уведомлений в Telegram
-#define CONFIG_TELEGRAM_ATTEMPTS_INTERVAL 3000
-// EN: WiFi availability timeout
-// RU: Время ожидания доступности WiFi
-#define CONFIG_TELEGRAM_WIFI_TIMEOUT 1000*60*60
-// EN: Internet availability timeout
-// RU: Время ожидания доступности интернета
-#define CONFIG_TELEGRAM_INTERNET_TIMEOUT 1000*60*10
+// EN: Minimum interval between two sends to Telegram
+// RU: Минимальный интервал между двумя отправками в Telegram
+#define CONFIG_TELEGRAM_SEND_INTERVAL 250
+// EN: Minimum free heap size (in % of available space) to accommodate the send queue
+// RU: Минимальный размер свободной кучи (в % от доступного объема) для размещения очереди отправки
+#define CONFIG_TELEGRAM_HEAP_LIMIT 25
+// EN: The interval between sending to Telegram in case the API returned an error 403
+// RU: Интервал между отправками в Telegram в случае если API вернуло ошибку 403
+#define CONFIG_TELEGRAM_FORBIDDEN_INTERVAL 60000
+// EN: Waiting time when Internet or WiFi is not available
+// RU: Время ожидания при недоступности интернет или WiFi
+#define CONFIG_TELEGRAM_INTERNET_INTERVAL 60000

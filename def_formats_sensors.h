@@ -86,6 +86,13 @@
 // EN: Format for voltage as a string
 // RU: Формат для напряжения в виде строки
 #define CONFIG_FORMAT_VOLTAGE_STRING "%.2f В"
+// EN: Power format
+// RU: Формат для мощности
+#define CONFIG_FORMAT_POWER_VALUE "%.1f"
+// EN: Format for power as a string
+// RU: Формат для мощности в виде строки
+#define CONFIG_FORMAT_POWER_STRING "%.0f"
+#define CONFIG_FORMAT_POWER_STRING_VA "%.0f VA"
 /********************************************************************************************
 // EN: Format for single values 
 // RU: Формат для одного значения

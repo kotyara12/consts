@@ -18,6 +18,7 @@
 #define CONFIG_SENSOR_STATUS_CONNECT "NO CONN"
 #define CONFIG_SENSOR_STATUS_CALIBRATION "CAL FAILED"
 #define CONFIG_SENSOR_STATUS_CRC_ERROR "CRC ERROR"
+#define CONFIG_SENSOR_STATUS_BAD_DATA "BAD DATA"
 #define CONFIG_SENSOR_STATUS_ERROR "ERROR"
 #define CONFIG_SENSOR_STATUS_OK "OK"
 #define CONFIG_SENSOR_STATUS_UNKNOWN "UNKNOWN"
@@ -72,7 +73,9 @@
 
 // EN: Text commands
 // RU: Текстовые команды
-#define CONFIG_SENSOR_COMMAND_TG_NOTIFY 1
+#define CONFIG_SENSOR_COMMAND_KIND MK_MAIN
+#define CONFIG_SENSOR_COMMAND_PRIORITY MP_INCREASED
+#define CONFIG_SENSOR_COMMAND_NOTIFY 1
 #define CONFIG_SENSOR_COMMAND_EXTR_RESET "clrextr"
 #define CONFIG_SENSOR_COMMAND_SENSORS_PREFIX "sensors"
 
@@ -121,6 +124,11 @@
 #define CONFIG_SENSOR_VOLTAGE_NAME "voltage"
 #define CONFIG_SENSOR_VOLTAGE_KEY "vol"
 #define CONFIG_SENSOR_VOLTAGE_FRIENDLY "Напряжение"
+// EN: Sensor name for power
+// RU: Название сенсора для мощности
+#define CONFIG_SENSOR_POWER_NAME "power"
+#define CONFIG_SENSOR_POWER_KEY "pow"
+#define CONFIG_SENSOR_POWER_FRIENDLY "Мощность"
 
 // EN: Names of parameters to save in NVS
 // RU: Названия параметров для сохранения в NVS

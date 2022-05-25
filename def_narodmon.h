@@ -5,10 +5,10 @@
 // ---------------------------------------------- EN - https://narodmon.ru/ ----------------------------------------------
 // ---------------------------------------------- RU - https://narodmon.ru/ ----------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
-// EN: TLS certificate for API
-// RU: TLS-сертификат для API
-#define CONFIG_NARODMON_TLS_PEM_START "_binary_isrg_root_x1_pem_start"
-#define CONFIG_NARODMON_TLS_PEM_END "_binary_isrg_root_x1_pem_end"
+// EN: An arbitrary TLS certificate for the API. Comment out if it is ISRG X1
+// RU: Произвольный TLS-сертификат для API. Закомментируйте, если это ISRG X1
+// #define CONFIG_NARODMON_TLS_PEM_START "_binary_isrg_root_x1_pem_start"
+// #define CONFIG_NARODMON_TLS_PEM_END "_binary_isrg_root_x1_pem_end"
 // EN: Minimum server access interval in milliseconds
 // RU: Минимальный интервал обращения к серверу в миллисекундах
 #define CONFIG_NARODMON_MIN_INTERVAL 300000

@@ -13,8 +13,8 @@
 #define CONFIG_OTA_WATCHDOG 600
 // EN: TLS certificate for the OTA update server
 // RU: TLS-сертификат для сервера OTA обновлений
-#define CONFIG_OTA_PEM_START "_binary_isrg_root_x1_pem_start"
-#define CONFIG_OTA_PEM_END "_binary_isrg_root_x1_pem_end"
+// #define CONFIG_OTA_PEM_START "_binary_isrg_root_x1_pem_start"
+// #define CONFIG_OTA_PEM_END "_binary_isrg_root_x1_pem_end"
 // EN: OTA task parameters
 // RU: Параметры задачи OTA
 #define CONFIG_OTA_TASK_STACK_SIZE 4*1024
