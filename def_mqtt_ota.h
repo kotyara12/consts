@@ -11,15 +11,17 @@
 // EN: Update timeout in seconds
 // RU: Таймаут обновления в секундах
 #define CONFIG_OTA_WATCHDOG 600
+// EN: Firmware check timeout after reboot (if the check is not completed within this time, the firmware will be rolled back)
+// RU: Таймаут проверки прошивки после перезагрузки (если за это время проверка не будет выполнена, будет выполнен откат прошивки)
+#define CONFIG_OTA_ROLLBACK_TIMEOUT 300
 // EN: TLS certificate for the OTA update server
 // RU: TLS-сертификат для сервера OTA обновлений
-// #define CONFIG_OTA_PEM_START "_binary_isrg_root_x1_pem_start"
-// #define CONFIG_OTA_PEM_END "_binary_isrg_root_x1_pem_end"
+#define CONFIG_OTA_PEM_STORAGE CONFIG_DEFAULT_TLS_STORAGE
+#define CONFIG_OTA_PEM_START CONFIG_DEFAULT_TLS_PEM_START
+#define CONFIG_OTA_PEM_END CONFIG_DEFAULT_TLS_PEM_END
 // EN: OTA task parameters
 // RU: Параметры задачи OTA
 #define CONFIG_OTA_TASK_STACK_SIZE 4*1024
-#define CONFIG_OTA_TASK_PRIORITY ESP_TASK_PRIO_MAX-10
-#define CONFIG_OTA_TASK_CORE 1
 
 // EN: Topic name for OTA updates
 // RU: Название топика для OTA обновлений

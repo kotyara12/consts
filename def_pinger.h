@@ -5,8 +5,6 @@
 // RU: Параметры задачи пинга: размер стека и приоритет
 #define CONFIG_PINGER_TASK_STATIC_ALLOCATION 1
 #define CONFIG_PINGER_TASK_STACK_SIZE 3*1024
-#define CONFIG_PINGER_TASK_CORE 1
-#define CONFIG_PINGER_TASK_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY
 // EN: A list of no more than three ping servers. If you don't need three, comment out the extra ones.
 // RU: Список из не более чем трех серверов для пинга. Если не требуется три, закоментируйте лишние.
 #define CONFIG_PINGER_HOST_1 "yandex.ru"

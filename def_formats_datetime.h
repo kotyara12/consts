@@ -29,6 +29,7 @@
 // RU: Форматы даты и времени
 #define CONFIG_FORMAT_DTS "%d.%m.%Y %H:%M:%S"
 #define CONFIG_FORMAT_DTM "%d.%m.%Y %H:%M"
+#define CONFIG_FORMAT_DTL "%d.%m.%y %H:%M"
 #define CONFIG_FORMAT_TIME "%H:%M"
 #define CONFIG_FORMAT_DATE "%d.%m.%y"
 // EN: Output sequence: "0" - time + day of the week [%TIME %WDAY]; "1" - day of the week + time [%WDAY %TIME]

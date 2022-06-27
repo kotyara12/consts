@@ -28,15 +28,17 @@
 #define CONFIG_NOTIFY_TELEGRAM_WIFI_FRIENDLY "WiFi"
 #define CONFIG_NOTIFY_TELEGRAM_WIFI_STATUS 1
 #define CONFIG_NOTIFY_TELEGRAM_WIFI_PRIORITY MP_HIGH
+#define CONFIG_NOTIFY_TELEGRAM_WIFI_THRESOLD 0
 #define CONFIG_NOTIFY_TELEGRAM_ALERT_WIFI_STATUS 0
 
-// EN: Send an alert to telegram when there are problems with the Internet (0-disabled, 1-only loss of access, 2-loss of access and channel overloading)
-// RU: Отправить оповещение в telegram при проблемах с интернетом (0-отключено, 1-только потеря доступа, 2-потеря доступа и загрузка канала)
+// EN: Send an alert to telegram when there are problems with the Internet
+// RU: Отправить оповещение в telegram при проблемах с интернетом
 #define CONFIG_NOTIFY_TELEGRAM_INET_KEY "internet"
 #define CONFIG_NOTIFY_TELEGRAM_INET_FRIENDLY "Internet (ping)"
 #define CONFIG_NOTIFY_TELEGRAM_INET_UNAVAILABLE 1
 #define CONFIG_NOTIFY_TELEGRAM_HOST_PRIORITY MP_ORDINARY
 #define CONFIG_NOTIFY_TELEGRAM_INET_PRIORITY MP_INCREASED
+#define CONFIG_NOTIFY_TELEGRAM_INET_THRESOLD 0
 #define CONFIG_NOTIFY_TELEGRAM_ALERT_INET_UNAVAILABLE 0
 
 // EN: Send notifications to Telegram when disconnecting and connecting to an MQTT broker
@@ -45,6 +47,8 @@
 #define CONFIG_NOTIFY_TELEGRAM_MQTT_FRIENDLY "MQTT"
 #define CONFIG_NOTIFY_TELEGRAM_MQTT_STATUS 1
 #define CONFIG_NOTIFY_TELEGRAM_MQTT_PRIORITY MP_HIGH
+#define CONFIG_NOTIFY_TELEGRAM_MQTT_THRESOLD 0
+#define CONFIG_NOTIFY_TELEGRAM_MQTT_PING_THRESOLD 0
 #define CONFIG_NOTIFY_TELEGRAM_ALERT_MQTT_STATUS 0
 // EN: Send notifications to Telegram on MQTT client errors
 // RU: Отправлять уведомления в Telegram при ошибках MQTT клиента
@@ -60,7 +64,17 @@
 #define CONFIG_NOTIFY_TELEGRAM_OPENMON_FRIENDLY "OpenMonitoring"
 #define CONFIG_NOTIFY_TELEGRAM_OPENMON_STATUS 1
 #define CONFIG_NOTIFY_TELEGRAM_OPENMON_PRIORITY MP_ORDINARY
+#define CONFIG_NOTIFY_TELEGRAM_OPENMON_THRESOLD 0
 #define CONFIG_NOTIFY_TELEGRAM_ALERT_OPENMON_STATUS 0
+
+// EN: Send notifications to Telegram when sending errors to narodmon.ru
+// RU: Отправлять уведомления в Telegram при ошибках отправки на narodmon.ru
+#define CONFIG_NOTIFY_TELEGRAM_NARODMON_KEY "narodmon"
+#define CONFIG_NOTIFY_TELEGRAM_NARODMON_FRIENDLY "NarodMon"
+#define CONFIG_NOTIFY_TELEGRAM_NARODMON_STATUS 1
+#define CONFIG_NOTIFY_TELEGRAM_NARODMON_PRIORITY MP_ORDINARY
+#define CONFIG_NOTIFY_TELEGRAM_NARODMON_THRESOLD 0
+#define CONFIG_NOTIFY_TELEGRAM_ALERT_NARODMON_STATUS 0
 
 // EN: Send notifications to Telegram when sending errors to thingspeak.com
 // RU: Отправлять уведомления в Telegram при ошибках отправки на thingspeak.com
@@ -68,6 +82,7 @@
 #define CONFIG_NOTIFY_TELEGRAM_THINGSPEAK_FRIENDLY "ThingSpeak"
 #define CONFIG_NOTIFY_TELEGRAM_THINGSPEAK_STATUS 1
 #define CONFIG_NOTIFY_TELEGRAM_THINGSPEAK_PRIORITY MP_ORDINARY
+#define CONFIG_NOTIFY_TELEGRAM_THINGSPEAK_THRESOLD 0
 #define CONFIG_NOTIFY_TELEGRAM_ALERT_THINGSPEAK_STATUS 0
 
 // EN: Allow notifications in Telegram when the sensor status changes (for example, open circuit)

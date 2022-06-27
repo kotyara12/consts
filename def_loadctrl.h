@@ -17,6 +17,7 @@
 
 // EN: String identifiers to denote time periods
 // RU: Строковые идентификаторы для обозначения периодов времени
+#define CONFIG_LOADCTRL_DAYS "days"
 #define CONFIG_LOADCTRL_LAST "last"
 #define CONFIG_LOADCTRL_TOTAL "total"
 #define CONFIG_LOADCTRL_TODAY "today"

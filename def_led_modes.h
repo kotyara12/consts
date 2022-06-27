@@ -8,8 +8,6 @@
 #define CONFIG_LED_QUEUE_SIZE 8
 #define CONFIG_LED_QUEUE_WAIT pdMS_TO_TICKS(250)
 #define CONFIG_LED_TASK_STACK_SIZE 1024
-#define CONFIG_LED_TASK_PRIORITY CONFIG_DEFAULT_TASK_PRIORITY+5
-#define CONFIG_LED_TASK_CORE 1
 
 /*********** rled32 : system blink modes *************/
 // EN: Single burst flash mode to indicate device activity (for example, when sending data)

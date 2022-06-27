@@ -13,6 +13,7 @@
 #define CONFIG_SENSOR_LOCAL_EXCHANGE "sensors"
 // EN: Sensor status text value
 // RU: Текстовое значение статуса сенсора
+#define CONFIG_SENSOR_STATUS_OK "OK"
 #define CONFIG_SENSOR_STATUS_NO_INIT "NO INIT"
 #define CONFIG_SENSOR_STATUS_NO_DATA "NO DATA"
 #define CONFIG_SENSOR_STATUS_CONNECT "NO CONN"
@@ -20,7 +21,6 @@
 #define CONFIG_SENSOR_STATUS_CRC_ERROR "CRC ERROR"
 #define CONFIG_SENSOR_STATUS_BAD_DATA "BAD DATA"
 #define CONFIG_SENSOR_STATUS_ERROR "ERROR"
-#define CONFIG_SENSOR_STATUS_OK "OK"
 #define CONFIG_SENSOR_STATUS_UNKNOWN "UNKNOWN"
 // EN: If "1", then in case of errors replace the displayed (mixed) sensor value with the status
 // RU: Если "1", то при ошибках заменять отображаемое (смешанное) значение сенсора на статус
