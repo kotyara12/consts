@@ -104,22 +104,30 @@
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_KEY "filter_size"
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_FRIENDLY "Размер буфера фильтра"
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_MAX 32767
-// EN: Input data range type for conversion in % for soil moisture sensors
-// RU: Тип диапазона входных данных для пересчета в % для сенсоров влажности почвы
+// EN: Input data range type for conversion in %
+// RU: Тип диапазона входных данных для пересчета в %
 #define CONFIG_SENSOR_PARAM_RANGETYPE_KEY "range_type"
 #define CONFIG_SENSOR_PARAM_RANGETYPE_FRIENDLY "Тип диапазона"
-// EN: Width (size) of the range of input data for conversion in % for soil moisture sensors
-// RU: Ширина (размер) диапазона входных данных для пересчета в % для сенсоров влажности почвы
+// EN: Width (size) of the range of input data for conversion in %
+// RU: Ширина (размер) диапазона входных данных для пересчета в %
 #define CONFIG_SENSOR_PARAM_RANGESIZE_KEY "range_size"
 #define CONFIG_SENSOR_PARAM_RANGESIZE_FRIENDLY "Ширина диапазона"
-// EN: Input data value corresponding to 0% for soil moisture sensors
-// RU: Значение входных данных, соответствующее 0% для сенсоров влажности почвы
+// EN: Input data value corresponding to 0%
+// RU: Значение входных данных, соответствующее 0%
 #define CONFIG_SENSOR_PARAM_LEVELMIN_KEY "range_0"
 #define CONFIG_SENSOR_PARAM_LEVELMIN_FRIENDLY "Значение 0%"
-// EN: Input data value corresponding to 100% for soil moisture sensors
-// RU: Значение входных данных, соответствующее 100% для сенсоров влажности почвы
+// EN: Input data value corresponding to 100%
+// RU: Значение входных данных, соответствующее 100%
 #define CONFIG_SENSOR_PARAM_LEVELMAX_KEY "range_100"
 #define CONFIG_SENSOR_PARAM_LEVELMAX_FRIENDLY "Значение 100%"
+// EN: Temperature coefficient for adjusting the value per 1 degree
+// RU: Температурный коэффициент для корректировки значения в расчете на 1 градус
+#define CONFIG_SENSOR_PARAM_VTC_COEF_KEY "tempcomp_coef"
+#define CONFIG_SENSOR_PARAM_VTC_COEF_FRIENDLY "Температурная компенсация на 1 градус"
+// EN: Base (zero) point of temperature compensation values
+// RU: Базовая (нулевая) точка температурной компенсации значений
+#define CONFIG_SENSOR_PARAM_VTC_BASE_KEY "tempcomp_base"
+#define CONFIG_SENSOR_PARAM_VTC_BASE_FRIENDLY "Базовая точка температурной компенсации"
 // EN: Built-in sensor heater parameters
 // RU: Параметры встроенного нагревателя сенсора
 #define CONFIG_SENSOR_PARAM_HEATER_GROUP_KEY "htr"

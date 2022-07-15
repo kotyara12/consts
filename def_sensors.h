@@ -99,6 +99,21 @@
 #define CONFIG_SENSOR_PRESSURE_NAME "pressure"
 #define CONFIG_SENSOR_PRESSURE_KEY "pres"
 #define CONFIG_SENSOR_PRESSURE_FRIENDLY "Давление"
+// EN: Name of the sensor for illumination
+// RU: Название сенсора для освещенности
+#define CONFIG_SENSOR_LIGHT_NAME "light"
+#define CONFIG_SENSOR_LIGHT_KEY "light"
+#define CONFIG_SENSOR_LIGHT_FRIENDLY "Освещенность"
+// EN: Name of the sensor for wind speed
+// RU: Название сенсора для скорости ветра
+#define CONFIG_SENSOR_WINDS_NAME "speed"
+#define CONFIG_SENSOR_WINDS_KEY "wnds"
+#define CONFIG_SENSOR_WINDS_FRIENDLY "Скорость ветра"
+// EN: Name of the sensor for wind direction
+// RU: Название сенсора для направления ветра
+#define CONFIG_SENSOR_WINDD_NAME "direction"
+#define CONFIG_SENSOR_WINDD_KEY "wndd"
+#define CONFIG_SENSOR_WINDD_FRIENDLY "Направление ветра"
 // EN: Sensor name for air quality
 // RU: Название сенсора для качества воздуха
 #define CONFIG_SENSOR_IAQ_NAME "iaq"

@@ -5,9 +5,19 @@
 // ------------------------------------------- EN - Sensor data formats --------------------------------------------------
 // --------------------------------------- RU - Форматы данных для сенсоров ----------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
-// RU: Empty value (NaN)
+// EN: Empty value (NaN)
 // RU: Пустое значение (NaN)
 #define CONFIG_FORMAT_EMPTY "---"
+// EN: Сardinal directions
+// RU: Стороны света
+#define CONFIG_FORMAT_NORTH "С"
+#define CONFIG_FORMAT_NORTHEAST "СВ"
+#define CONFIG_FORMAT_EAST "В"
+#define CONFIG_FORMAT_SOUTHEAST "ЮВ"
+#define CONFIG_FORMAT_SOUTH "Ю"
+#define CONFIG_FORMAT_SOUTHWEST "ЮЗ"
+#define CONFIG_FORMAT_WEST "З"
+#define CONFIG_FORMAT_NORTHWEST "СЗ"
 // EN: Format for displaying hours and minutes
 // RU: Формат для вывода часов и минут
 #define CONFIG_FORMAT_TIMEINT "%.2d:%.2d"
@@ -47,15 +57,39 @@
 // EN: Format for air humidity as a string
 // RU: Формат для влажности воздуха в виде строки
 #define CONFIG_FORMAT_HUMIDITY_STRING "%.2f%%"
+// EN: Soil moisture format
+// RU: Формат для влажности воздуха
+#define CONFIG_FORMAT_MOISTURE_VALUE "%.1f"
+// EN: Format for soil moisture as a string
+// RU: Формат для влажности воздуха в виде строки
+#define CONFIG_FORMAT_MOISTURE_STRING "%.1f%%"
 // EN: Air pressure format
 // RU: Формат для давления воздуха
-#define CONFIG_FORMAT_PRESSURE_VALUE "%.1f"
+#define CONFIG_FORMAT_PRESSURE_VALUE "%.2f"
 // EN: Air pressure units (0 - Pa, 1 - hPa, 2 - mmHg)
 // RU: Единицы измерения для давления воздуха
 #define CONFIG_FORMAT_PRESSURE_UNIT UNIT_PRESSURE_MMHG 
 // EN: Format for air pressure as a string
 // RU: Формат для давления воздуха в виде строки
-#define CONFIG_FORMAT_PRESSURE_STRING "%.0f мм"
+#define CONFIG_FORMAT_PRESSURE_STRING "%.1f мм"
+// EN: Illumination format
+// RU: Формат для освещенности
+#define CONFIG_FORMAT_LIGHT_VALUE "%.0f"
+// EN: Format for illumination as a string
+// RU: Формат для освещенности в виде строки
+#define CONFIG_FORMAT_LIGHT_STRING "%.0f"
+// EN: Wind speed format
+// RU: Формат для скорости ветра
+#define CONFIG_FORMAT_WINDS_VALUE "%.1f"
+// EN: Format for wind speed as a string
+// RU: Формат для скорости ветра в виде строки
+#define CONFIG_FORMAT_WINDS_STRING "%.1f m/s"
+// EN: Wind direction format
+// RU: Формат для направления ветра
+#define CONFIG_FORMAT_WINDD_VALUE "%.0f"
+// EN: Format for wind direction as a string
+// RU: Формат для направления ветра в виде строки
+#define CONFIG_FORMAT_WINDD_STRING "%s"
 // EN: Air quality format
 // RU: Формат для качества воздуха
 #define CONFIG_FORMAT_IAQ_VALUE "%.1f"
