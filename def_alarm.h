@@ -9,6 +9,10 @@
 // RU: Преобразование адреса GPIO для I2C расширителей портов
 #define CONFIG_ALARM_IOEXP_SENSOR(bus, address, pin) ((((bus)+1) << 16) | ((address) << 8) | (pin))
 
+// EN: Interval for forced publication of events on MQTT (by timer)
+// RU: Интервал принудительной публикации событий на MQTT (по таймеру)
+#define CONFIG_ALARM_MQTT_INTERVAL_SEC 60
+
 // EN: Timeouts for resetting 2-wire smoke detectors after triggering
 // RU: Таймауты сброса 2-х проводных датчиков дыма после срабатывания
 #define CONFIG_ALARM_IOEXP_FIRE_RESET_DELAY_US 5000000
@@ -129,6 +133,8 @@
 #define CONFIG_ALARM_PARAMS_EXIT_TIME_FRIENDLY "Время на выход из зоны охраны (сек)"
 #define CONFIG_ALARM_PARAMS_FIX_RX433_CODES_KEY "fix_433_codes"
 #define CONFIG_ALARM_PARAMS_FIX_RX433_CODES_FRIENDLY "Фиксировать новые RX433 коды"
+#define CONFIG_ALARM_PARAMS_MQTT_INTERVAL_KEY "mqtt_interval"
+#define CONFIG_ALARM_PARAMS_MQTT_INTERVAL_FRIENDLY "Интервал публикации списка событий на MQTT (сек)"
 
 
 #define CONFIG_ALARM_PARAMS_QOS 1

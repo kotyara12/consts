@@ -4,26 +4,25 @@
 
 // EN: Default task priority
 // RU: Приоритет задачи "по умолчанию"
-#ifndef CONFIG_DEFAULT_TASK_PRIORITY
-#define CONFIG_DEFAULT_TASK_PRIORITY 5
-#endif
+// #define CONFIG_DEFAULT_TASK_PRIORITY        5
 
 // EN: Priorities of applied tasks
 // RU: Приоритеты прикладных задач
-#define CONFIG_TASK_PRIORITY_SENSORS        CONFIG_DEFAULT_TASK_PRIORITY         // 05
-#define CONFIG_TASK_PRIORITY_ALARM          CONFIG_DEFAULT_TASK_PRIORITY + 3     // 08
+#define CONFIG_TASK_PRIORITY_SENSORS        6U
+#define CONFIG_TASK_PRIORITY_ALARM          8U
 
 // EN: Priorities of system tasks
 // RU: Приоритеты системных задач
-#define CONFIG_EVENT_LOOP_PRIORITY          ESP_TASKD_EVENT_PRIO + 10            // 15
-#define CONFIG_TASK_PRIORITY_OTA            ESP_TASK_PRIO_MAX - 5                // 20
-#define CONFIG_TASK_PRIORITY_LED            CONFIG_DEFAULT_TASK_PRIORITY + 12    // 17
-#define CONFIG_TASK_PRIORITY_BEEP           CONFIG_DEFAULT_TASK_PRIORITY + 13    // 18
-#define CONFIG_TASK_PRIORITY_PING           CONFIG_DEFAULT_TASK_PRIORITY - 3     // 02
-#define CONFIG_TASK_PRIORITY_PINGER         CONFIG_DEFAULT_TASK_PRIORITY - 3     // 02
-#define CONFIG_TASK_PRIORITY_MQTT_CLIENT    CONFIG_DEFAULT_TASK_PRIORITY + 7     // 12
-#define CONFIG_TASK_PRIORITY_TELEGRAM       CONFIG_DEFAULT_TASK_PRIORITY + 6     // 11
-#define CONFIG_TASK_PRIORITY_DATASEND       CONFIG_DEFAULT_TASK_PRIORITY + 5     // 10
+#define CONFIG_EVENT_LOOP_PRIORITY          19U
+#define CONFIG_TASK_PRIORITY_OTA            10U
+
+#define CONFIG_TASK_PRIORITY_PING           3U
+#define CONFIG_TASK_PRIORITY_PINGER         3U
+#define CONFIG_TASK_PRIORITY_DATASEND       5U
+#define CONFIG_TASK_PRIORITY_TELEGRAM       11U
+#define CONFIG_TASK_PRIORITY_MQTT_CLIENT    12U
+#define CONFIG_TASK_PRIORITY_LED            13U
+#define CONFIG_TASK_PRIORITY_BEEP           14U
 
 // EN: Processor core of applied tasks
 // RU: Процессорное ядро прикладных задач

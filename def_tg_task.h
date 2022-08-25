@@ -42,7 +42,7 @@
 #define CONFIG_TELEGRAM_SEND_INTERVAL 10
 // EN: The interval between sending to Telegram in case the API returned an error 403
 // RU: Интервал между отправками в Telegram в случае если API вернуло ошибку 403
-#define CONFIG_TELEGRAM_FORBIDDEN_INTERVAL 60000
+#define CONFIG_TELEGRAM_FORBIDDEN_INTERVAL 10
 // EN: Waiting time when Internet or WiFi is not available
 // RU: Время ожидания при недоступности интернет или WiFi
-#define CONFIG_TELEGRAM_INTERNET_INTERVAL 60000
+#define CONFIG_TELEGRAM_INTERNET_INTERVAL 10
