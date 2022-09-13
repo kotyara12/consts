@@ -21,7 +21,7 @@
 #define CONFIG_MESSAGE_TG_MQTT_CONN_FAILED "🟡 Не удалось подключиться к MQTT брокеру <b>%s:%d</b>"
 #define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_PRIMARY "🔀 Выполнено переключение на <b><i>основной</i></b> MQTT брокер <b>%s:%d</b>"
 #define CONFIG_MESSAGE_TG_MQTT_SERVER_CHANGE_RESERVED "🔀 Выполнено переключение на <b><i>резервный</i></b> MQTT брокер <b>%s:%d</b>"
-#define CONFIG_MESSAGE_TG_MQTT_ERROR "🛑 Ошибка MQTT ''<b>%s</b>''!"
+#define CONFIG_MESSAGE_TG_MQTT_ERROR "🛑 Ошибка MQTT клиента\n:<code>%s</code>!"
 #define CONFIG_MESSAGE_TG_OTA "⚙️ Загрузка новой версии прошивки по адресу: <b>%s</b>"
 #define CONFIG_MESSAGE_TG_CMD "🔤 Получена команда: <b>%s</b>"
 #define CONFIG_MESSAGE_TG_MQTT_NOT_PROCESSED "🛑 Не удалось обработать входящее сообщение в топике ''<b>%s</b>''!"
