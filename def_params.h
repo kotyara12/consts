@@ -104,30 +104,17 @@
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_KEY "filter_size"
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_FRIENDLY "Размер буфера фильтра"
 #define CONFIG_SENSOR_PARAM_FILTERSIZE_MAX 32767
-// EN: Input data range type for conversion in %
-// RU: Тип диапазона входных данных для пересчета в %
-#define CONFIG_SENSOR_PARAM_RANGETYPE_KEY "range_type"
-#define CONFIG_SENSOR_PARAM_RANGETYPE_FRIENDLY "Тип диапазона"
-// EN: Width (size) of the range of input data for conversion in %
-// RU: Ширина (размер) диапазона входных данных для пересчета в %
-#define CONFIG_SENSOR_PARAM_RANGESIZE_KEY "range_size"
-#define CONFIG_SENSOR_PARAM_RANGESIZE_FRIENDLY "Ширина диапазона"
-// EN: Input data value corresponding to 0%
-// RU: Значение входных данных, соответствующее 0%
-#define CONFIG_SENSOR_PARAM_LEVELMIN_KEY "range_0"
-#define CONFIG_SENSOR_PARAM_LEVELMIN_FRIENDLY "Значение 0%"
-// EN: Input data value corresponding to 100%
-// RU: Значение входных данных, соответствующее 100%
-#define CONFIG_SENSOR_PARAM_LEVELMAX_KEY "range_100"
-#define CONFIG_SENSOR_PARAM_LEVELMAX_FRIENDLY "Значение 100%"
-// EN: Temperature coefficient for adjusting the value per 1 degree
-// RU: Температурный коэффициент для корректировки значения в расчете на 1 градус
-#define CONFIG_SENSOR_PARAM_VTC_COEF_KEY "tempcomp_coef"
-#define CONFIG_SENSOR_PARAM_VTC_COEF_FRIENDLY "Температурная компенсация на 1 градус"
-// EN: Base (zero) point of temperature compensation values
-// RU: Базовая (нулевая) точка температурной компенсации значений
-#define CONFIG_SENSOR_PARAM_VTC_BASE_KEY "tempcomp_base"
-#define CONFIG_SENSOR_PARAM_VTC_BASE_FRIENDLY "Базовая точка температурной компенсации"
+// EN: Sensor parameters responsible for converting values to a new range
+// RU: Параметры сенсора, отвечающие за пересчет значений в новый диапазон
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_TYPE_KEY "bounds_type"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_TYPE_FRIENDLY "Тип диапазона"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MIN_KEY "bounds_lower"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MIN_FRIENDLY "Нижняя граница"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MAX_KEY "bounds_upper"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MAX_FRIENDLY "Верхняя граница"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_RANGE_KEY "bounds_size"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_RANGE_FRIENDLY "Размер диапазона"
+
 // EN: Built-in sensor heater parameters
 // RU: Параметры встроенного нагревателя сенсора
 #define CONFIG_SENSOR_PARAM_HEATER_GROUP_KEY "htr"
@@ -141,19 +128,15 @@
 // RU: Длительность работы нагревателя сенсора в миллисекундах
 #define CONFIG_SENSOR_PARAM_HEATER_DUR_KEY "duration"
 #define CONFIG_SENSOR_PARAM_HEATER_DUR_FRIENDLY "Длительность"
-// EN: Lower value limit for air quality sensor
-// RU: Нижняя граница значений для сенсора качества воздуха
-#define CONFIG_SENSOR_PARAM_GAS_LIMIT_BAD_KEY "limit_bad"
-#define CONFIG_SENSOR_PARAM_GAS_LIMIT_BAD_FRIENDLY "Нижняя граница"
-// EN: Higher value limit for air quality sensor
-// RU: Верхняя граница значений для сенсора качества воздуха
-#define CONFIG_SENSOR_PARAM_GAS_LIMIT_GOOD_KEY "limit_good"
-#define CONFIG_SENSOR_PARAM_GAS_LIMIT_GOOD_FRIENDLY "Верхняя граница"
-// EN: Higher value limit for air quality sensor
-// RU: Верхняя граница значений для сенсора качества воздуха
-#define CONFIG_SENSOR_PARAM_GAS_LIMIT_AUTOSHIFT_KEY "limit_autoshift"
-#define CONFIG_SENSOR_PARAM_GAS_LIMIT_AUTOSHIFT_FRIENDLY "Автосдвиг границ"
 // EN: Humidity contribution to total IAQ
 // RU: Коэффициент вклада влажности в общее значение IAQ
 #define CONFIG_SENSOR_PARAM_GAS_HUM_RATIO_KEY "hum_ratio"
 #define CONFIG_SENSOR_PARAM_GAS_HUM_RATIO_FRIENDLY "Коэффициент влажности"
+// EN: Temperature coefficient for adjusting the value per 1 degree
+// RU: Температурный коэффициент для корректировки значения в расчете на 1 градус
+#define CONFIG_SENSOR_PARAM_VTC_COEF_KEY "tempcomp_coef"
+#define CONFIG_SENSOR_PARAM_VTC_COEF_FRIENDLY "Температурная компенсация на 1 градус"
+// EN: Base (zero) point of temperature compensation values
+// RU: Базовая (нулевая) точка температурной компенсации значений
+#define CONFIG_SENSOR_PARAM_VTC_BASE_KEY "tempcomp_base"
+#define CONFIG_SENSOR_PARAM_VTC_BASE_FRIENDLY "Базовая точка температурной компенсации"
