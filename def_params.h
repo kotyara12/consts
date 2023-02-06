@@ -108,9 +108,9 @@
 // RU: Параметры сенсора, отвечающие за пересчет значений в новый диапазон
 #define CONFIG_SENSOR_PARAM_MAP_BOUNDS_TYPE_KEY "bounds_type"
 #define CONFIG_SENSOR_PARAM_MAP_BOUNDS_TYPE_FRIENDLY "Тип диапазона"
-#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MIN_KEY "bounds_lower"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MIN_KEY "bounds_min"
 #define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MIN_FRIENDLY "Нижняя граница"
-#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MAX_KEY "bounds_upper"
+#define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MAX_KEY "bounds_max"
 #define CONFIG_SENSOR_PARAM_MAP_BOUNDS_MAX_FRIENDLY "Верхняя граница"
 #define CONFIG_SENSOR_PARAM_MAP_BOUNDS_RANGE_KEY "bounds_size"
 #define CONFIG_SENSOR_PARAM_MAP_BOUNDS_RANGE_FRIENDLY "Размер диапазона"
