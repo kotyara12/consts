@@ -15,3 +15,6 @@
 #define CONFIG_RANGE_MONITOR_LAST_NORMAL            "last_normal"
 #define CONFIG_RANGE_MONITOR_LAST_LOW               "last_low"
 #define CONFIG_RANGE_MONITOR_LAST_HIGH              "last_high"
+
+#define CONFIG_RANGE_MONITOR_TIMESTAMP_BUF_SIZE     17
+#define CONFIG_RANGE_MONITOR_TIMESTAMP_FORMAT       "%d.%m.%Y %H:%M"

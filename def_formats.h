@@ -17,3 +17,7 @@
 #define CONFIG_FORMAT_OPT_U64    "%d"
 #define CONFIG_FORMAT_OPT_FLOAT  "%.2f"
 #define CONFIG_FORMAT_OPT_DOUBLE "%f"
+
+// EN: Buffer length for converting 64-bit numbers to a string
+// RU: Длина буфера для преобразования 64-битных чисел в строку
+#define CONFIG_BUFFER_LEN_INT64_RADIX10 20

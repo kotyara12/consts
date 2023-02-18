@@ -78,7 +78,7 @@
 #define CONFIG_ALARM_MQTT_STATUS_DISPLAY 0
 #define CONFIG_ALARM_MQTT_STATUS_SUMMARY "%s : %.2d : %s"
 #define CONFIG_ALARM_MQTT_STATUS_DEVICE_EMPTY "Нет событий"
-#define CONFIG_ALARM_MQTT_STATUS_JSON_ALARM "{\"sensor\":\"%s\",\"time\":\"%s\",\"time_short\":\"%s\",\"unixtime\":%d}"
+#define CONFIG_ALARM_MQTT_STATUS_JSON_ALARM "{\"sensor\":\"%s\",\"time\":\"%s\",\"time_short\":\"%s\",\"unixtime\":%s}"
 #define CONFIG_ALARM_MQTT_STATUS_JSON_ANNUNCIATOR "{\"siren\":%d,\"flasher\":%d,\"summary\":%d}"
 #define CONFIG_ALARM_MQTT_STATUS_EOL CONFIG_JSON_CHAR_EOL
 
@@ -92,7 +92,7 @@
 #define CONFIG_ALARM_MQTT_EVENTS_TYPE "type"
 #define CONFIG_ALARM_MQTT_EVENTS_STATUS "status"
 #define CONFIG_ALARM_MQTT_EVENTS_JSON "json"
-#define CONFIG_ALARM_MQTT_EVENTS_JSON_TEMPLATE "{\"status\":%d,\"time\":\"%s\",\"time_short\":\"%s\",\"unixtime\":%d,\"count\":%d}"
+#define CONFIG_ALARM_MQTT_EVENTS_JSON_TEMPLATE "{\"status\":%d,\"time\":\"%s\",\"time_short\":\"%s\",\"unixtime\":%s,\"count\":%d}"
 #define CONFIG_ALARM_MQTT_EVENTS_ASE_ALARM "alarm"
 #define CONFIG_ALARM_MQTT_EVENTS_ASE_TAMPER "tamper"
 #define CONFIG_ALARM_MQTT_EVENTS_ASE_POWER "power"

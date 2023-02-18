@@ -6,13 +6,15 @@
 // ------------------------------------------ RU - Форматы даты и времени ------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
 // EN: Buffer size for converting date and time to string
-// RU: Размер буфера для конвертации даты и времни в строку
+// RU: Размер буфера для конвертации даты и времeни в строку
 #define CONFIG_FORMAT_STRFTIME_BUFFER_SIZE 32
 #define CONFIG_FORMAT_STRFTIME_DTS_BUFFER_SIZE 20 // YYYY.MM.DD HH:NN:SS + \n
 #define CONFIG_FORMAT_STRFTIME_DTM_BUFFER_SIZE 17 // YYYY.MM.DD HH:NN + \n
+#define CONFIG_FORMAT_STRFTIME_DTL_BUFFER_SIZE 15 // YY.MM.DD HH:NN + \n
 // EN: Textual representation of an "empty" date and time
 // RU: Текстовое представление "пустой" даты и времени
 #define CONFIG_FORMAT_EMPTY_DATETIME "---"
+#define CONFIG_FORMAT_EMPTY_DATETIME_POSIX "0"
 // EN: Localized names for days of the week
 // RU: Локализованные названия для дней недели
 #define CONFIG_FORMAT_WDAY1 "пн"
