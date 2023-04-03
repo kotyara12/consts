@@ -5,6 +5,18 @@
 // ------------------------------------------- EN - Common parameters ----------------------------------------------------
 // -------------------------------------------- RU - Общие параметры -----------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
+// EN: Threshold options
+// RU: Параметры пороговых значений
+#define CONFIG_PARAM_THRESHOLD_TYPE_KEY "threshold_type"
+#define CONFIG_PARAM_THRESHOLD_TYPE_FRIENDLY "Тип порогового значения"
+#define CONFIG_PARAM_THRESHOLD_VALUE_KEY "threshold"
+#define CONFIG_PARAM_THRESHOLD_VALUE_FRIENDLY "Пороговое значение"
+#define CONFIG_PARAM_HYSTERESIS_TYPE_KEY "hysteresis_type"
+#define CONFIG_PARAM_HYSTERESIS_TYPE_FRIENDLY "Режим гистерезиса"
+#define CONFIG_PARAM_HYSTERESIS_VALUE_KEY "hysteresis"
+#define CONFIG_PARAM_HYSTERESIS_VALUE_FRIENDLY "Гистерезис"
+
+
 // EN: Parameters for the "silent" mode
 // RU: Параметры для "тихого" режима
 #if defined(CONFIG_SILENT_MODE_ENABLE) && CONFIG_SILENT_MODE_ENABLE
