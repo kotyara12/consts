@@ -39,6 +39,32 @@
 // EN: Format for outputting value + time
 // RU: Формат для вывода значения + время
 #define CONFIG_FORMAT_TSVALUE "%s" CONFIG_JSON_CHAR_EOL "%s"
+
+// EN: Integer format
+// RU: Формат для целых значений
+#define CONFIG_FORMAT_INTEGER_VALUE "%.0f"
+// EN: Format for integer as a string
+// RU: Формат для целых значений в виде строки
+#define CONFIG_FORMAT_INTEGER_STRING "%.0f"
+// EN: Format for values with one decimal place
+// RU: Формат для значений c одним знаком после запятой
+#define CONFIG_FORMAT_FLOAT1_VALUE "%.1f"
+// EN: Format for values with one decimal place as a string
+// RU: Формат для значений c одним знаком после запятой в виде строки
+#define CONFIG_FORMAT_FLOAT1_STRING "%.1f"
+// EN: Format for values with two decimal place
+// RU: Формат для значений c двумя знаками после запятой
+#define CONFIG_FORMAT_FLOAT2_VALUE "%.2f"
+// EN: Format for values with two decimal place as a string
+// RU: Формат для значений c двумя знаками после запятой в виде строки
+#define CONFIG_FORMAT_FLOAT2_STRING "%.2f"
+// EN: Format for values with three decimal places
+// RU: Формат для значений c тремя знаками после запятой
+#define CONFIG_FORMAT_FLOAT3_VALUE "%.3f"
+// EN: Format for values with three decimal place as a string
+// RU: Формат для значений c тремя знаками после запятой в виде строки
+#define CONFIG_FORMAT_FLOAT3_STRING "%.3f"
+
 // EN: Temperature format
 // RU: Формат для температуры
 #define CONFIG_FORMAT_TEMP_VALUE "%.2f"
@@ -127,6 +153,7 @@
 // RU: Формат для мощности в виде строки
 #define CONFIG_FORMAT_POWER_STRING "%.0f"
 #define CONFIG_FORMAT_POWER_STRING_VA "%.0f VA"
+
 /********************************************************************************************
 // EN: Format for single values 
 // RU: Формат для одного значения

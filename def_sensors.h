@@ -94,6 +94,16 @@
 #define CONFIG_SENSOR_MOISTURE_NAME "moisture"
 #define CONFIG_SENSOR_MOISTURE_KEY "mstr"
 #define CONFIG_SENSOR_MOISTURE_FRIENDLY "Влажность"
+// EN: Sensor name for conductivity
+// RU: Название сенсора для проводимости 
+#define CONFIG_SENSOR_CONDUCTIVITY_NAME "conductivity"
+#define CONFIG_SENSOR_CONDUCTIVITY_KEY "cndv"
+#define CONFIG_SENSOR_CONDUCTIVITY_FRIENDLY "Проводимость"
+// EN: Sensor name for PH
+// RU: Название сенсора для PH
+#define CONFIG_SENSOR_PH_NAME "ph"
+#define CONFIG_SENSOR_PH_KEY "ph"
+#define CONFIG_SENSOR_PH_FRIENDLY "PH"
 // EN: Sensor name for air pressure
 // RU: Название сенсора для давления
 #define CONFIG_SENSOR_PRESSURE_NAME "pressure"
