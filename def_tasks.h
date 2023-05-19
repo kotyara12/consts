@@ -13,7 +13,7 @@
 
 // EN: Priorities of system tasks
 // RU: Приоритеты системных задач
-#define CONFIG_EVENT_LOOP_PRIORITY          19U
+#define CONFIG_EVENT_LOOP_PRIORITY          16U
 #define CONFIG_TASK_PRIORITY_OTA            10U
 
 #define CONFIG_TASK_PRIORITY_PING           3U
