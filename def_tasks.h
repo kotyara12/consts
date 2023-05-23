@@ -9,6 +9,7 @@
 // EN: Priorities of applied tasks
 // RU: Приоритеты прикладных задач
 #define CONFIG_TASK_PRIORITY_SENSORS        6U
+#define CONFIG_TASK_PRIORITY_IOEXP          7U
 #define CONFIG_TASK_PRIORITY_ALARM          8U
 
 // EN: Priorities of system tasks
@@ -27,6 +28,7 @@
 // EN: Processor core of applied tasks
 // RU: Процессорное ядро прикладных задач
 #define CONFIG_TASK_CORE_SENSORS            1
+#define CONFIG_TASK_CORE_IOEXP              1
 #define CONFIG_TASK_CORE_ALARM              1
 
 // EN: Processor core of system tasks
