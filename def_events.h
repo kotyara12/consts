@@ -14,7 +14,9 @@
 #if CONFIG_EVENT_LOOP_DEDICATED
 // EN: Events queue size for the main event loop
 // RU: Размер очереди сообщений для основного цикла событий
+#if !defined(CONFIG_EVENT_LOOP_QUEUE_SIZE)
 #define CONFIG_EVENT_LOOP_QUEUE_SIZE 64
+#endif // CONFIG_EVENT_LOOP_QUEUE_SIZE
 // EN: Stack size of the main event loop task
 // RU: Размер стека задачи основного цикла событий
 #define CONFIG_EVENT_LOOP_STACK_SIZE 4096 // ESP_TASKD_EVENT_STACK+1024

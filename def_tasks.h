@@ -33,7 +33,9 @@
 
 // EN: Processor core of system tasks
 // RU: Процессорное ядро системных задач
+#if !defined(CONFIG_EVENT_LOOP_CORE)
 #define CONFIG_EVENT_LOOP_CORE              0
+#endif // CONFIG_EVENT_LOOP_CORE
 #define CONFIG_TASK_CORE_OTA                1
 #define CONFIG_TASK_CORE_LED                1
 #define CONFIG_TASK_CORE_BEEP               0
