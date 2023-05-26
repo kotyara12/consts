@@ -109,6 +109,11 @@
 #define CONFIG_SENSOR_PRESSURE_NAME "pressure"
 #define CONFIG_SENSOR_PRESSURE_KEY "pres"
 #define CONFIG_SENSOR_PRESSURE_FRIENDLY "Давление"
+// EN: Sensor name for level
+// RU: Название сенсора для уровня 
+#define CONFIG_SENSOR_LEVEL_NAME "level"
+#define CONFIG_SENSOR_LEVEL_KEY "lvl"
+#define CONFIG_SENSOR_LEVEL_FRIENDLY "Уровень"
 // EN: Name of the sensor for illumination
 // RU: Название сенсора для освещенности
 #define CONFIG_SENSOR_LIGHT_NAME "light"
