@@ -89,6 +89,11 @@
 #define CONFIG_SENSOR_HUMIDITY_NAME "humidity"
 #define CONFIG_SENSOR_HUMIDITY_KEY "humd"
 #define CONFIG_SENSOR_HUMIDITY_FRIENDLY "Влажность"
+// EN: Sensor name for air pressure
+// RU: Название сенсора для давления
+#define CONFIG_SENSOR_PRESSURE_NAME "pressure"
+#define CONFIG_SENSOR_PRESSURE_KEY "pres"
+#define CONFIG_SENSOR_PRESSURE_FRIENDLY "Давление"
 // EN: Sensor name for moisture
 // RU: Название сенсора для влажности почвы
 #define CONFIG_SENSOR_MOISTURE_NAME "moisture"
@@ -104,11 +109,6 @@
 #define CONFIG_SENSOR_PH_NAME "ph"
 #define CONFIG_SENSOR_PH_KEY "ph"
 #define CONFIG_SENSOR_PH_FRIENDLY "PH"
-// EN: Sensor name for air pressure
-// RU: Название сенсора для давления
-#define CONFIG_SENSOR_PRESSURE_NAME "pressure"
-#define CONFIG_SENSOR_PRESSURE_KEY "pres"
-#define CONFIG_SENSOR_PRESSURE_FRIENDLY "Давление"
 // EN: Sensor name for level
 // RU: Название сенсора для уровня 
 #define CONFIG_SENSOR_LEVEL_NAME "level"
