@@ -11,7 +11,7 @@
 #define CONFIG_SHUTTER_VALUE "steps"
 #define CONFIG_SHUTTER_PERCENT "percent"
 #define CONFIG_SHUTTER_MAXIMUM  "maximum"
-#define CONFIG_SHUTTER_TIMESTAMP "timestamp"
+#define CONFIG_SHUTTER_TIMESTAMP "timestamps"
 
 // EN: Timestamp format
 // RU: Формат отметок времени
