@@ -12,7 +12,7 @@
 // EN: Stack size for the task of sending data to external services
 // RU: Размер стека для задачи отправки данных на внешние сервисы
 #ifndef CONFIG_DATASEND_STACK_SIZE
-#define CONFIG_DATASEND_STACK_SIZE 3584
+#define CONFIG_DATASEND_STACK_SIZE 4*1024
 #endif
 // EN: Queue size for the task of sending data to external services
 // RU: Размер очереди для задачи отправки данных на внешние сервисы
