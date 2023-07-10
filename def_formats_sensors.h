@@ -85,10 +85,10 @@
 #define CONFIG_FORMAT_HUMIDITY_STRING "%.2f%%"
 // EN: Soil moisture format
 // RU: Формат для влажности воздуха
-#define CONFIG_FORMAT_MOISTURE_VALUE "%.1f"
+#define CONFIG_FORMAT_MOISTURE_VALUE "%.2f"
 // EN: Format for soil moisture as a string
 // RU: Формат для влажности воздуха в виде строки
-#define CONFIG_FORMAT_MOISTURE_STRING "%.1f%%"
+#define CONFIG_FORMAT_MOISTURE_STRING "%.2f%%"
 // EN: Air pressure format
 // RU: Формат для давления воздуха
 #define CONFIG_FORMAT_PRESSURE_VALUE "%.2f"
