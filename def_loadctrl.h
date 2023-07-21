@@ -6,6 +6,7 @@
 #define CONFIG_LOADCTRL_ON "on"
 #define CONFIG_LOADCTRL_OFF "off"
 #define CONFIG_LOADCTRL_STATUS "status"
+#define CONFIG_LOADCTRL_CYCLES "cycles"
 #define CONFIG_LOADCTRL_TIMESTAMP "timestamp"
 #define CONFIG_LOADCTRL_COUNTERS "counters"
 #define CONFIG_LOADCTRL_DURATIONS "durations"
