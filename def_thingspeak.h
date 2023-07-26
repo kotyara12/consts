@@ -8,8 +8,8 @@
 // EN: API connection options
 // RU: Параметры подключения к API 
 #define CONFIG_THINGSPEAK_TLS_PEM_STORAGE CONFIG_DEFAULT_TLS_STORAGE
-#define CONFIG_THINGSPEAK_TLS_PEM_START   "_binary_digi_cert_pem_start"
-#define CONFIG_THINGSPEAK_TLS_PEM_END     "_binary_digi_cert_pem_end"
+#define CONFIG_THINGSPEAK_TLS_PEM_START   "_binary_digi_cert_g2_pem_start"
+#define CONFIG_THINGSPEAK_TLS_PEM_END     "_binary_digi_cert_g2_pem_end"
 #define CONFIG_THINGSPEAK_API_HOST        "thingspeak.com"
 #define CONFIG_THINGSPEAK_API_PORT        443
 #define CONFIG_THINGSPEAK_API_SEND_PATH   "/update"
