@@ -20,6 +20,7 @@
 #include "def_formats_datetime.h"
 #include "def_loadctrl.h"
 #include "def_binstat.h"
+#include "def_tristat.h"
 #include "def_shutter.h"
 #include "def_tempmonitor.h"
 #include "def_eltariffs.h"
