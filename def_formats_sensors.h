@@ -109,7 +109,7 @@
 #define CONFIG_FORMAT_WINDS_VALUE "%.1f"
 // EN: Format for wind speed as a string
 // RU: Формат для скорости ветра в виде строки
-#define CONFIG_FORMAT_WINDS_STRING "%.1f m/s"
+#define CONFIG_FORMAT_WINDS_STRING "%.1f м/с"
 // EN: Wind direction format
 // RU: Формат для направления ветра
 #define CONFIG_FORMAT_WINDD_VALUE "%.0f"
@@ -134,6 +134,12 @@
 // EN: Format for CO2 as a string
 // RU: Формат для CO2 в виде строки
 #define CONFIG_FORMAT_CO2_STRING "%.0f"
+// EN: Volume format
+// RU: Формат для объема
+#define CONFIG_FORMAT_VOLUME_VALUE "%.1f"
+// EN: Format for volume as a string
+// RU: Формат для объема в виде строки
+#define CONFIG_FORMAT_VOLUME_STRING "%.1f л"
 // EN: ADC default format
 // RU: Формат для ADC по умолчанию
 #define CONFIG_FORMAT_ADC_VALUE "%.3f"

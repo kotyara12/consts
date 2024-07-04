@@ -109,6 +109,31 @@
 #define CONFIG_SENSOR_PH_NAME "ph"
 #define CONFIG_SENSOR_PH_KEY "ph"
 #define CONFIG_SENSOR_PH_FRIENDLY "PH"
+// EN: Sensor name for nitrogen content
+// RU: Название сенсора для cодержания азота
+#define CONFIG_SENSOR_NITROGEN_NAME "nitrogen"
+#define CONFIG_SENSOR_NITROGEN_KEY "ngc"
+#define CONFIG_SENSOR_NITROGEN_FRIENDLY "Содержание азота"
+// EN: Sensor name for phosphorus content
+// RU: Название сенсора для cодержания фосфора
+#define CONFIG_SENSOR_PHOSPHORUS_NAME "phosphorus"
+#define CONFIG_SENSOR_PHOSPHORUS_KEY "phc"
+#define CONFIG_SENSOR_PHOSPHORUS_FRIENDLY "Содержание фосфора"
+// EN: Sensor name for potassium content
+// RU: Название сенсора для cодержания фосфора
+#define CONFIG_SENSOR_POTASSIUM_NAME "potassium"
+#define CONFIG_SENSOR_POTASSIUM_KEY "ptc"
+#define CONFIG_SENSOR_POTASSIUM_FRIENDLY "Содержание калия"
+// EN: Sensor name for salinity
+// RU: Название сенсора для солености
+#define CONFIG_SENSOR_SALINITY_NAME "salinity"
+#define CONFIG_SENSOR_SALINITY_KEY "sln"
+#define CONFIG_SENSOR_SALINITY_FRIENDLY "Соленость"
+// EN: Sensor name for TDS
+// RU: Название сенсора для TDS
+#define CONFIG_SENSOR_TDS_NAME "tds"
+#define CONFIG_SENSOR_TDS_KEY "tds"
+#define CONFIG_SENSOR_TDS_FRIENDLY "TDS"
 // EN: Sensor name for level
 // RU: Название сенсора для уровня 
 #define CONFIG_SENSOR_LEVEL_NAME "level"
@@ -159,6 +184,11 @@
 #define CONFIG_SENSOR_POWER_NAME "power"
 #define CONFIG_SENSOR_POWER_KEY "pow"
 #define CONFIG_SENSOR_POWER_FRIENDLY "Мощность"
+// EN: Sensor name for volume
+// RU: Название сенсора для объема
+#define CONFIG_SENSOR_VOLUME_NAME "volume"
+#define CONFIG_SENSOR_VOLUME_KEY "vol"
+#define CONFIG_SENSOR_VOLUME_FRIENDLY "Объем"
 
 // EN: Names of parameters to save in NVS
 // RU: Названия параметров для сохранения в NVS
