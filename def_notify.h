@@ -31,6 +31,15 @@
 #define CONFIG_NOTIFY_TELEGRAM_WIFI_THRESOLD 0
 #define CONFIG_NOTIFY_TELEGRAM_ALERT_WIFI_STATUS 0
 
+// EN: Send notifications to Telegram when disconnecting and connecting to Ethernet
+// RU: Отправлять уведомления в Telegram при отключении и подключении к Ethernet
+#define CONFIG_NOTIFY_TELEGRAM_ETH_KEY "eth"
+#define CONFIG_NOTIFY_TELEGRAM_ETH_FRIENDLY "Ethernet"
+#define CONFIG_NOTIFY_TELEGRAM_ETH_STATUS 1
+#define CONFIG_NOTIFY_TELEGRAM_ETH_PRIORITY MP_HIGH
+#define CONFIG_NOTIFY_TELEGRAM_ETH_THRESOLD 0
+#define CONFIG_NOTIFY_TELEGRAM_ALERT_ETH_STATUS 0
+
 // EN: Send an alert to telegram when there are problems with the Internet
 // RU: Отправить оповещение в telegram при проблемах с интернетом
 #define CONFIG_NOTIFY_TELEGRAM_INET_KEY "internet"

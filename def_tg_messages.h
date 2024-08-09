@@ -14,6 +14,7 @@
 #define CONFIG_MESSAGE_TG_GWAY_AVAILABLE "📶 Доступ к роутеру восстановлен" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_INET_AVAILABLE "🟢 Доступ к <b>сети интернет</b> восстановлен" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_WIFI_AVAILABLE "📶 Подключение к точке доступа WiFi <b>%s</b> восстановлено" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
+#define CONFIG_MESSAGE_TG_ETH_AVAILABLE "📶 Ethernet-соединение восстановлено" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_HOST_UNAVAILABLE "🔴 Сервер <b>%s</b> не доступен" CONFIG_MESSAGE_TG_START_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_INET_UNAVAILABLE "🔴 Доступ к <b>сети интернет</b> потерян" CONFIG_MESSAGE_TG_START_UNAVAILABLE
 #define CONFIG_MESSAGE_TG_MQTT_CONN_OK "🟢 Подключение к MQTT брокеру <b>%s</b> восстановлено" CONFIG_MESSAGE_TG_PERIOD_UNAVAILABLE
