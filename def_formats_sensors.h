@@ -64,6 +64,14 @@
 // EN: Format for values with three decimal place as a string
 // RU: Формат для значений c тремя знаками после запятой в виде строки
 #define CONFIG_FORMAT_FLOAT3_STRING "%.3f"
+// EN: Format for percents with one decimal place
+// RU: Формат для процентов c одним знаком после запятой
+#define CONFIG_FORMAT_PERCENT1_VALUE "%.1f"
+// EN: Format for процентов with one decimal place as a string
+// RU: Формат для процентов c одним знаком после запятой в виде строки
+#define CONFIG_FORMAT_PERCENT1_STRING "%.1f %%"
+// EN: Format for values with two decimal place
+// RU: Формат для значений c двумя знаками после запятой
 
 // EN: Temperature format
 // RU: Формат для температуры
@@ -106,22 +114,40 @@
 #define CONFIG_FORMAT_LIGHT_STRING "%.0f"
 // EN: Wind speed format
 // RU: Формат для скорости ветра
-#define CONFIG_FORMAT_WINDS_VALUE "%.1f"
+#define CONFIG_FORMAT_WIND_SPEED_VALUE "%.1f"
 // EN: Format for wind speed as a string
 // RU: Формат для скорости ветра в виде строки
-#define CONFIG_FORMAT_WINDS_STRING "%.1f м/с"
+#define CONFIG_FORMAT_WIND_SPEED_STRING "%.1f м/с"
+// EN: Wind strength format
+// RU: Формат для силы ветра
+#define CONFIG_FORMAT_WIND_STRENGTH_VALUE "%.0f"
+// EN: Format for wind strength as a string
+// RU: Формат для силы ветра в виде строки
+#define CONFIG_FORMAT_WIND_STRENGTH_STRING "%.0f"
 // EN: Wind direction format
 // RU: Формат для направления ветра
-#define CONFIG_FORMAT_WINDD_VALUE "%.0f"
+#define CONFIG_FORMAT_WIND_DIRECTION_VALUE "%.0f"
 // EN: Format for wind direction as a string
 // RU: Формат для направления ветра в виде строки
-#define CONFIG_FORMAT_WINDD_STRING "%s"
+#define CONFIG_FORMAT_WIND_DIRECTION_STRING "%.0f°"
 // EN: Air quality format
 // RU: Формат для качества воздуха
 #define CONFIG_FORMAT_IAQ_VALUE "%.1f"
 // EN: Format for air quality as a string
 // RU: Формат для качества воздуха в виде строки
 #define CONFIG_FORMAT_IAQ_STRING "%.1f"
+// EN: Format for air dustiness
+// RU: Формат для запыленности воздуха
+#define CONFIG_FORMAT_PM_VALUE "%.0f"
+// EN: Format for air dustiness as a string
+// RU: Формат для запыленности воздуха в виде строки
+#define CONFIG_FORMAT_PM_STRING "%.0f"
+// EN: Format for amount of precipitation
+// RU: Формат для количества осадков
+#define CONFIG_FORMAT_RAINFALL_VALUE "%.1f"
+// EN: Format for amount of precipitation as a string
+// RU: Формат для количества осадков в виде строки
+#define CONFIG_FORMAT_RAINFALL_STRING "%.1f мм"
 // EN: Air quality format
 // RU: Формат для качества воздуха
 #define CONFIG_FORMAT_TVOC_VALUE "%.0f"
