@@ -178,7 +178,7 @@
 // EN: Sensor name for precipitation amount
 // RU: Название сенсора для количества осадков
 #define CONFIG_SENSOR_RAINFALL_KEY "rfl"
-#define CONFIG_SENSOR_RAINFALL_NAME "rainfail"
+#define CONFIG_SENSOR_RAINFALL_NAME "rainfall"
 #define CONFIG_SENSOR_RAINFALL_FRIENDLY "Количество осадков"
 // EN: Sensor name for air quality
 // RU: Название сенсора для качества воздуха

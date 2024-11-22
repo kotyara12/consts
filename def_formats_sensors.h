@@ -142,6 +142,12 @@
 // EN: Format for air dustiness as a string
 // RU: Формат для запыленности воздуха в виде строки
 #define CONFIG_FORMAT_PM_STRING "%.0f"
+// EN: Format for water level
+// RU: Формат для уровня воды или высоты
+#define CONFIG_FORMAT_SM_VALUE "%.1f"
+// EN: Format for water level as a string
+// RU: Формат для уровня воды или высоты в виде строки
+#define CONFIG_FORMAT_SM_STRING "%.1f см"
 // EN: Format for amount of precipitation
 // RU: Формат для количества осадков
 #define CONFIG_FORMAT_RAINFALL_VALUE "%.1f"
