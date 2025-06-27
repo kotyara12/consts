@@ -149,6 +149,11 @@
 #define CONFIG_SENSOR_ILLUMINATION_KEY "ilm"
 #define CONFIG_SENSOR_ILLUMINATION_NAME "illumination"
 #define CONFIG_SENSOR_ILLUMINATION_FRIENDLY "Освещенность"
+// EN: Sensor name for soil parameters
+// RU: Название сенсора для параметров почвы
+#define CONFIG_SENSOR_SOIL_KEY "soil"
+#define CONFIG_SENSOR_SOIL_TOPIC "soil"
+#define CONFIG_SENSOR_SOIL_FRIENDLY "Почва"
 // EN: Sensor name for wind parameters
 // RU: Название сенсора для параметров ветра
 #define CONFIG_SENSOR_WIND_KEY "wind"

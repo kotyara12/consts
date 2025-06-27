@@ -108,10 +108,12 @@
 #define CONFIG_FORMAT_PRESSURE_STRING "%.1f мм"
 // EN: Illumination format
 // RU: Формат для освещенности
-#define CONFIG_FORMAT_LIGHT_VALUE "%.0f"
+#define CONFIG_FORMAT_ILLUMINATION_VALUE "%.0f"
+#define CONFIG_FORMAT_LIGHT_VALUE CONFIG_FORMAT_ILLUMINATION_VALUE
 // EN: Format for illumination as a string
 // RU: Формат для освещенности в виде строки
-#define CONFIG_FORMAT_LIGHT_STRING "%.0f"
+#define CONFIG_FORMAT_ILLUMINATION_STRING "%.0f"
+#define CONFIG_FORMAT_LIGHT_STRING CONFIG_FORMAT_ILLUMINATION_STRING
 // EN: Wind speed format
 // RU: Формат для скорости ветра
 #define CONFIG_FORMAT_WIND_SPEED_VALUE "%.1f"

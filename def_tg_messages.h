@@ -26,8 +26,6 @@
 #define CONFIG_MESSAGE_TG_OTA "⚙️ Загрузка новой версии прошивки по адресу: <b>%s</b>"
 #define CONFIG_MESSAGE_TG_CMD "🔤 Получена команда: <b>%s</b>"
 #define CONFIG_MESSAGE_TG_MQTT_NOT_PROCESSED "🛑 Не удалось обработать входящее сообщение в топике ''<b>%s</b>''!"
-#define CONFIG_MESSAGE_TG_PARAM_GROUP_DELIMITER "%s.%s"
-#define CONFIG_MESSAGE_TG_PARAM_FIENDLY_DELIMITER "%s / %s"
 #define CONFIG_MESSAGE_TG_PARAM_CHANGE "🛠 Изменение параметра ''<b>%s</b> / <b>%s</b>'':\n\n<code>%s/%s = <b>%s</b></code>"
 #define CONFIG_MESSAGE_TG_PARAM_EQUAL "🛠 Изменение параметра ''<b>%s</b> / <b>%s</b>'' (%s/%s) игнорировано - новое значение <b>%s</b> идентично предыдущему"
 #define CONFIG_MESSAGE_TG_PARAM_INVALID "🛑 Не удалось выполнить изменение параметра ''<b>%s</b> / <b>%s</b>'' - новое значение <b>%s</b> выходит за допустимые пределы"
